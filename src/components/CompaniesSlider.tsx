@@ -11,7 +11,7 @@ import Voith from "../assets/logos/voith_logo.svg";
 import Maxion from "../assets/logos/maxion_logo.svg";
 import Gobain from "../assets/logos/gobain_logo.svg";
 
-import { SliderContainer } from "../styles/components/CompaniesSlider";
+import { SliderContainer } from "../../styles/components/CompaniesSlider";
 
 import "keen-slider/keen-slider.min.css";
 

@@ -11,7 +11,7 @@ import Fiemg from "../assets/logos/fiemg.svg";
 import Ahk from "../assets/logos/ahk.svg";
 import Hundred from "../assets/logos/100.svg";
 
-import { SliderContainer } from "../styles/components/CompaniesSlider";
+import { SliderContainer } from "../../styles/components/CompaniesSlider";
 
 import "keen-slider/keen-slider.min.css";
 

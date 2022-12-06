@@ -1,4 +1,4 @@
-import { RibbonContainer } from "../styles/components/Ribbon"
+import { RibbonContainer } from "../../styles/components/Ribbon"
 
 import { WhatsappLogo } from "phosphor-react"
 

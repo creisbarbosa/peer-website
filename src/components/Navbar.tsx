@@ -1,8 +1,8 @@
 import Image from "next/image";
 import logoImg from "../assets/logo.svg";
 import { SignIn, CaretDown } from "phosphor-react"
-import { Container, ButtonContainer } from "../styles/components/Navbar"
-import { Button, IconButton } from "../styles/components/Button"
+import { Container, ButtonContainer } from "../../styles/components/Navbar"
+import { Button, IconButton } from "../../styles/components/Button"
 
 export default function Navbar() {
 
@@ -28,7 +28,7 @@ export default function Navbar() {
           <SignIn size={20} weight="bold" />
         </IconButton>
         <Button color="blue">
-          Comprar peças usinadas
+          Fale com um consultor
         </Button>
       </ButtonContainer>
     </Container>

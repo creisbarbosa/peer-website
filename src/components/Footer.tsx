@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FooterContainer } from "../styles/components/Footer"
+import { FooterContainer } from "../../styles/components/Footer"
 import LogoWhite from "../assets/logo_white.svg";
 
 export default function Footer () {

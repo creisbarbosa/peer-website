@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { BasicForms, ContentDiv, LandingSection, ConnectedMachiningSection, OperationSection, CADSection, NumbersSection, PartnerBenefits, VideoSection, BlogSection } from "../styles/pages/home";
-import { Button } from "../styles/components/Button";
+import { BasicForms, ContentDiv, LandingSection, ConnectedMachiningSection, OperationSection, CADSection, NumbersSection, PartnerBenefits, VideoSection, BlogSection } from "../../styles/pages/home";
+import { Button } from "../../styles/components/Button";
 
 import singleDot from "../assets/singleDot.svg";
 import doubleDot from "../assets/doubleDot.svg";
@@ -27,7 +27,7 @@ export default function Home() {
             <Image src={doubleDot} alt="Company logo" />
           </BasicForms>
           <h1>A forma mais fácil e rápida de comprar peças usinadas</h1>
-          <p>A plataforma da Peerdustry conta com <strong>+ de 400</strong> fornecedores garante a qualidade e o prazo de entrega de peças usinadas spot.</p>
+          <p>Somos uma plataforma digital de compra e venda de peças usinadas, com <strong>+ de 400</strong> fornecedores, que garante a qualidade e o prazo de entrega de demandas spot.</p>
           <Button color="blue">Comprar peças usinadas</Button>
         </ContentDiv>
       </LandingSection>
@@ -39,8 +39,8 @@ export default function Home() {
           <div className="operationHeader">
             <h2>Como funciona?</h2>
             <hr />
-            <p>Como uma empresa de tecnologia especializada em Usinagem Conectada, nosso maior objetivo é simplificar a vida de empresas que fornecem e compram peças usinadas sob demanda.
-            Gerenciamos de forma integral - de ponta a ponta - os processos de compra e venda dos nossos parceiros para gerar valor e tornar a cadeia de usinagem de peças mais eficiente.</p>
+            <p>Gerenciamos de forma integral - de ponta a ponta - os processos de compra e venda dos nossos parceiros para gerar valor e tornar a cadeia de usinagem de peças mais eficiente.</p>
+            <blockquote>Nosso maior objetivo é simplificar a vida de empresas que fornecem e compram peças usinadas sob demanda.</blockquote>
           </div>
           <div className="operationCards">
             <article className="clientOperationCard">
@@ -53,7 +53,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3>Quem consome peças usinadas</h3>
-              <p>Em uma ponta temos empresas que consomem peças usinadas de baixo volume sob demanda, para a montagem de produtos finais, como máquinas e equipamentos ou para uso em manutenção das suas linhas de produção.</p>
+              <p>Em uma ponta temos empresas que consomem peças usinadas de baixo volume sob demanda, para a montagem de produtos finais, como máquinas e ferramentas. <strong>Produza mais em menos tempo e ganhe eficiência e produtividade!</strong></p>
             </article>
             <article className="peerdustryOperationCard">
               <div>
@@ -62,7 +62,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3>Peerdustry</h3>
-              <p>No meio está a Peer,  integrando as duas pontas da cadeia de usinagem de peças. Unimos empresas com capacidade produtiva ociosa com outras que apresentam demanda por fabricação.</p>
+              <p>Integrando as duas pontas da cadeia de usinagem de peças. Unimos empresas com capacidade produtiva ociosa com outras que apresentam demanda por fabricação. Além de eliminar os prazos de negociação, a Peer diminui todos os custos envolvidos no processo de compra e venda de peças.</p>
             </article>
             <article className="partnersOperationCard">
               <div>
@@ -74,7 +74,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3>Parceiros de manufatura</h3>
-              <p>Na outra ponta temos os fabricantes de peças usinadas, que por meio da Peer conseguem capturar novos trabalhos e assim utilizar seu maquinário ocioso para atender clientes.</p>
+              <p>Na outra ponta temos os fabricantes de peças usinadas, que por meio da Peer conseguem capturar novos trabalhos, utilizando maquinário ocioso para atender novos clientes, e ainda <strong>acabam com dores de cabeça relacionadas com os altos custos do processo de vendas.</strong></p>
             </article>
           </div> 
         </div>
@@ -108,10 +108,12 @@ export default function Home() {
             <div className="card">
               <div className="cardHeader">
                 <strong>Para quem compra</strong>
-                <h2>Compre peças usinadas fácil e rápido</h2>
+                <h2>Compre peças usinadas com facilidade</h2>
               </div>
               <div className="content">
-                <p>Atualmente, contamos com centenas de parceiros de manufatura homologados em nossa plataforma digital. Ou seja, os compradores têm acesso a um grande volume de fornecedores em um só canal, gerando economia de tempo na busca por novos fornecedores +</p>
+                <p>Com a Peer você fabrica peças com especialistas e tem mais tempo para se dedicar ao seu negócio. 
+                </p>
+                <p>Todos os pedidos ficam disponíveis para centenas de parceiros de produção, eliminando longas etapas do processo de compras.</p>
                 <Button color="red">Solicitar cotação →</Button>
               </div>
             </div>
@@ -166,7 +168,7 @@ export default function Home() {
               </div>
               <div className="numbersInfo">
                 <h2>+36.000</h2>
-                <strong>Peças usinadas</strong>
+                <strong>Peças únicas usinadas</strong>
               </div>
                 <p>Por meio da tecnologia de análise de dados conseguimos entregar os pedidos certos para os parceiros de manufatura ideais, otimizando a produção de peças usinadas.</p>
             </article>

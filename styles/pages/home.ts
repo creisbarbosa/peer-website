@@ -1,11 +1,11 @@
 import { styled } from "..";
 
-import LandingImage from "../../assets/img/SectionImage01.png";
-import DrillingImg from "../../assets/img/Machining01.png";
-import PackageImg from "../../assets/img/Image02.png";
-import CADImg from "../../assets/img/CADSection_bg.png";
-import ConnectedBgImg01 from "../../assets/img/connected_bg_1.png";
-import ConnectedBgImg02 from "../../assets/img/connected_bg_2.png";
+import LandingImage from "../../src/assets/img/SectionImage01.png";
+import DrillingImg from "../../src/assets/img/Machining01.png";
+import PackageImg from "../../src/assets/img/Image02.png";
+import CADImg from "../../src/assets/img/CADSection_bg.png";
+import ConnectedBgImg01 from "../../src/assets/img/connected_bg_1.png";
+import ConnectedBgImg02 from "../../src/assets/img/connected_bg_2.png";
 
 export const LandingSection = styled('div', {
   backgroundImage: `url(${LandingImage.src})`,

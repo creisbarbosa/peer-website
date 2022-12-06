@@ -1,6 +1,6 @@
 import { styled } from "..";
 
-import Background from "../../assets/img/Footer_bg.png"
+import Background from "../../src/assets/img/Footer_bg.png";
 
 export const FooterContainer = styled('footer', {
   display: 'flex',

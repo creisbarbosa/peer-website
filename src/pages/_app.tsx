@@ -1,7 +1,7 @@
 import { AppProps } from "next/app"
-import { globalStyles } from "../styles/globals"
+import { globalStyles } from "../../styles/globals"
 
-import { Container } from "../styles/pages/app"
+import { Container } from "../../styles/pages/app"
 import Navbar from "../components/Navbar"
 import Ribbon from "../components/Ribbon"
 import Footer from "../components/Footer"
