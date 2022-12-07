@@ -13,21 +13,19 @@ export const FooterContainer = styled('footer', {
   '.header': {
     display: 'flex',
     flexDirection: 'row',
-    gap: 24,
     borderBottom: '1px solid $white10',
     justifyContent: 'space-between',
-    padding: '4rem 20rem',
+    padding: '4rem',
 
     div: {
       display: 'flex',
       flexDirection: 'column',
       gap: '2rem',
-      padding: '0 5rem',
-      maxWidth: '36rem',
+      maxWidth: '31rem',
 
       h2: {
-        fontSize: '3rem',
-        lineHeight: '3.25rem',
+        fontSize: '2.5rem',
+        lineHeight: '3rem',
         color: '$blue50',
       },
       
@@ -64,9 +62,7 @@ export const FooterContainer = styled('footer', {
   '.links': {
     display: 'flex',
     justifyContent: 'space-between',
-    gap: '2rem',
-    padding: '4rem 20rem',
-    maxWidth: '74rem',
+    padding: '4rem',
     borderBottom: '1px solid $white10',
 
     ul: {
@@ -104,8 +100,15 @@ export const FooterContainer = styled('footer', {
     strong: {
       fontSize: '0.875rem',
       fontWeight: '400',
-
     },
   },
 
+  '@lg':{
+    '.header':{
+      padding: '4rem 7rem',
+    },
+    '.links':{
+      padding: '4rem 7rem',
+    },
+},
 })

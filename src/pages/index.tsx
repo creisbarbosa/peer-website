@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { BasicForms, ContentDiv, LandingSection, ConnectedMachiningSection, OperationSection, CADSection, NumbersSection, PartnerBenefits, VideoSection, BlogSection } from "../../styles/pages/home";
+import { LandingSection, ConnectedMachiningSection, OperationSection, CADSection, NumbersSection, PartnerBenefits, VideoSection, BlogSection } from "../../styles/pages/home";
 import { Button } from "../../styles/components/Button";
 
 import singleDot from "../assets/singleDot.svg";
@@ -21,15 +21,15 @@ export default function Home() {
   return (
     <>
       <LandingSection>
-        <ContentDiv>
-          <BasicForms>
+        <div className="contentDiv">
+          <div className="basicForms">
             <Image src={singleDot} alt="Company logo" />
             <Image src={doubleDot} alt="Company logo" />
-          </BasicForms>
-          <h1>A forma mais fácil e rápida de comprar peças usinadas</h1>
-          <p>Somos uma plataforma digital de compra e venda de peças usinadas, com <strong>+ de 400</strong> fornecedores, que garante a qualidade e o prazo de entrega de demandas spot.</p>
+          </div>
+          <h1>A forma mais fácil e <br /> rápida de comprar <br /> peças usinadas</h1>
+          <p>Somos uma plataforma digital de compra e venda de peças <br /> usinadas, com <strong>+ de 400</strong> fornecedores, que garante a <br /> qualidade e o prazo de entrega de demandas spot.</p>
           <Button color="blue">Comprar peças usinadas</Button>
-        </ContentDiv>
+        </div>
       </LandingSection>
 
       <CompaniesSlider/>
@@ -87,7 +87,7 @@ export default function Home() {
           <div className="header">
           <h2>Usinagem Conectada</h2>
           <p>A Peerdustry facilita a compra e venda de peças usinadas sob demanda. Gerenciamos os processos de ponta a ponta, desde o pedido até a entrega, gerando eficiência para toda a cadeia de usinagem. E o melhor: fazemos tudo digitalmente!</p>
-          <BasicForms>
+          <div className="basicForms">
             <svg width="43" height="44" viewBox="0 0 43 44" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="21.5" cy="22" r="21.5"/>
             </svg>
@@ -97,7 +97,7 @@ export default function Home() {
             <svg width="43" height="44" viewBox="0 0 43 44" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="21.5" cy="22" r="21.5"/>
             </svg>
-          </BasicForms>
+          </div>
         </div>
 
         <div className="cardsContainer">
@@ -217,36 +217,39 @@ export default function Home() {
       </NumbersSection>
 
       <PartnerBenefits>
-        <div className="partnerBenefitsImg">
-          <Image src={Image01} alt=""></Image>
+        <div className="partnerBenefitsWrapper">
+          <div className="partnerBenefitsImg">
+            <Image src={Image01} alt=""></Image>
+          </div>
+            <div className="partnerBenefitsContent">
+              <h2>Inove o seu  processo produtivo</h2>
+              <hr/>
+              <div className="paragraph">
+                <p>Na era da indústria 4.0, as empresas que estão passando por transformação digital estão à frente. Cada vez mais, o mercado de peças usinadas sob demanda exige rapidez, eficiência e assertividade.</p>
+                <p>O digital e a tecnologia de dados permitem que os clientes e Parceiros de Manufatura da Peer ganhem tempo para produzir mais, deixando para trás etapas burocráticas e trabalhosas dos processos de compra e venda de peças usinadas.Já pensou em fornecer ou comprar peças digitalmente, economizando até tempo de custos de deslocamento?</p> 
+                <h3>Transforma agora a produção da sua empresa!</h3>            
+              </div>
+              <div className="benefitsCards">
+                <article>
+                  <strong>Economize</strong>
+                  <h3>+ 60h</h3>
+                  <strong>Abertura de novos clientes</strong>
+                </article>
+                <article>
+                  <strong>Economize</strong>
+                  <h3>+ 70h</h3>
+                  <strong>Elaboração de orçamentos</strong>
+                </article>
+                <article>
+                  <strong>Economize</strong>
+                  <h3>+ 60h</h3>
+                  <strong>Compra de MP + Frete</strong>
+                </article>
+              </div>
+              <Button color="red">Fale com a Peer</Button>
+          </div>
         </div>
-          <div className="partnerBenefitsContent">
-            <h2>Inove o seu  processo produtivo</h2>
-            <hr/>
-            <div className="paragraph">
-              <p>Na era da indústria 4.0, as empresas que estão passando por transformação digital estão à frente. Cada vez mais, o mercado de peças usinadas sob demanda exige rapidez, eficiência e assertividade.</p>
-              <p>O digital e a tecnologia de dados permitem que os clientes e Parceiros de Manufatura da Peer ganhem tempo para produzir mais, deixando para trás etapas burocráticas e trabalhosas dos processos de compra e venda de peças usinadas.Já pensou em fornecer ou comprar peças digitalmente, economizando até tempo de custos de deslocamento?</p> 
-              <h3>Transforma agora a produção da sua empresa!</h3>            
-            </div>
-            <div className="benefitsCards">
-              <article>
-                <strong>Economize</strong>
-                <h3>+ 60h</h3>
-                <strong>Abertura de novos clientes</strong>
-              </article>
-              <article>
-                <strong>Economize</strong>
-                <h3>+ 70h</h3>
-                <strong>Elaboração de orçamentos</strong>
-              </article>
-              <article>
-                <strong>Economize</strong>
-                <h3>+ 60h</h3>
-                <strong>Compra de MP + Frete</strong>
-              </article>
-            </div>
-            <Button color="red">Fale com a Peer</Button>
-        </div>
+        
       </PartnerBenefits>
 
       <CADSection>

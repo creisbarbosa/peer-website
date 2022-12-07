@@ -16,8 +16,7 @@ export default function Navbar() {
       <div>
         <ul>
           <li><a href="">Compre</a></li>
-          <li><a href="">Parceria</a></li>
-          <li><a href="">Funcionamento</a></li>
+          <li><a href="">Seja parcerio</a></li>
           <li><a href="">Recursos</a></li>
           <li><a href="">A Peerdustry <CaretDown size={15} weight="bold" /> </a></li>
         </ul>

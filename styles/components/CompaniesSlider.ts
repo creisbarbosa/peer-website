@@ -5,7 +5,6 @@ export const SliderContainer = styled('main', {
   alignItems: 'center',
   width: '100%',
   minHeight: '156px',
-  maxWidth: 'calc(100vw - ((100vw - 1170px)/2))',
   marginLeft: 'auto',
   
   a : {
@@ -22,8 +21,8 @@ export const SliderContainer = styled('main', {
     fontFamily: 'Inter',
     fontStyle: 'normal',
     fontWeight: 500,
-    fontSize: '14px',
-    lineHeight: '18px',
+    fontSize: '0.75rem',
+    lineHeight: '1rem',
     letterSpacing: '-0.02em',
     textDecoration: 'none',
     color: '$slate500',
@@ -32,6 +31,23 @@ export const SliderContainer = styled('main', {
 
     '&:hover': {
       filter: 'brightness(1.4)',
-    }
-  }
+    },
+  },
+
+  '@md': {
+    maxWidth: 'calc(100vw - ((100vw - 56rem)/2))',
+  },
+
+  '@lg': {
+    maxWidth: 'calc(100vw - ((100vw - 69rem)/2))',
+  },
+
+  '@xl': {
+    maxWidth: 'calc(100vw - ((100vw - 74rem)/2))',
+    a: {
+      fontSize: '0.875rem',
+      lineHeight: '1.135rem',
+    },
+  },
+
 })

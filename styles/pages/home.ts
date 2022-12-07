@@ -14,36 +14,34 @@ export const LandingSection = styled('div', {
   backgroundSize: 'cover',
 
   display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
   padding: '4rem 0px',
   borderBottom: '1px solid $stroke40',
   width: '100%',
-});
 
-export const ContentDiv = styled('div', {
-  display: 'flex',
-  flexDirection: 'column',
-  gap: '32px',
-  width: '74rem',
-
-  h1: {
-    maxWidth: '40rem',
+  '.contentDiv': {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '2rem',
+    padding: '0 2rem',
+    
+    '@md' : {
+      padding: '0 4rem',
+    },
+  
+    '@xl': {
+      padding: '0 9rem',
+    },
   },
 
-  p: {
-    maxWidth: '28rem',
-  }
-});
-
-export const BasicForms = styled('div', {
-  display: 'flex',
-  flexDirection: 'row',
-  gap: '1.5rem',
-
-  '& svg' : {
-    fill: "$slate300"
-  }
+  '.basicForms': {
+    display: 'flex',
+    flexDirection: 'row',
+    gap: '1.5rem',
+  
+    '& svg' : {
+      fill: "$slate300"
+    },
+  },
 });
 
 export const ConnectedMachiningSection = styled('section', {
@@ -71,7 +69,17 @@ export const ConnectedMachiningSection = styled('section', {
 
     p: {
       maxWidth: '70%',
-    }
+    },
+
+    '.basicForms': {
+      display: 'flex',
+      flexDirection: 'row',
+      gap: '1.5rem',
+    
+      '& svg' : {
+        fill: "$slate300"
+      },
+    },
   },
 
   '.cardsContainer': {
@@ -191,20 +199,22 @@ export const ConnectedMachiningSection = styled('section', {
 });
 
 export const OperationSection = styled('section',{
-  padding: '6rem 0',
-  borderBottom: '1px solid $stroke40',
-  borderTop: '1px solid $stroke40',
-  backgroundImage: 'linear-gradient(90deg, $slate200 40%, #FFFFFF 100%)',
-  width: '100%',
   display: 'flex',
   justifyContent: 'center',
+
+  padding: '4rem 0',
+
+  borderBottom: '1px solid $stroke40',
+  borderTop: '1px solid $stroke40',
+
+  backgroundImage: 'linear-gradient(90deg, $slate200 40%, #FFFFFF 100%)',
+  width: '100%',
   
   '.operationWrapper': {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
     gap: 40,
-    maxWidth: '74rem',
 
     '.operationHeader': {
       display: 'flex',
@@ -242,12 +252,12 @@ export const OperationSection = styled('section',{
       backgroundColor: '$white',
       boxShadow: '4px 4px 16px rgba(0, 67, 127, 0.15)',
       borderRadius: 20,
-      padding: 32,
+      padding: '2rem',
 
       div: {
         display: 'flex',
         flexDirection: 'row',
-        gap: 16,
+        gap: '1rem',
       },
 
       h2: {
@@ -257,12 +267,43 @@ export const OperationSection = styled('section',{
 
       p: {
         fontWeight: '400',
-        fontSize: '1rem',
-        lineHeight: '1.375rem',
+        fontSize: '0.875rem',
+        lineHeight: '1.35rem',
         letterSpacing: '-0.02em',
       },
     },
   },
+
+  '@md': {
+    '.operationWrapper': {
+      padding: '0 4rem',
+      },
+    },
+
+  '@lg': {
+    '.operationWrapper': {
+      padding: '0 6rem',
+      article: {
+        p: {
+          fontSize: '0.875rem',
+          lineHeight: '1.35rem',
+        },
+      },
+    },
+  },
+
+  '@xl': {
+    '.operationWrapper': {
+      padding: '0 9rem',
+      article: {
+        p: {
+          fontSize: '1rem',
+          lineHeight: '1.375rem',
+        },
+      },
+    },
+  },
+
 });
 
 export const CADSection = styled('section', {
@@ -401,23 +442,31 @@ export const NumbersSection = styled('section', {
 
 export const PartnerBenefits = styled('section', {
   display: 'flex',
-  flexDirection: 'row',
-  padding: '8rem 9rem 8rem 0',
-  gap: 120,
-  maxWidth: '97rem',
+  justifyContent: 'center',
+  padding: '6rem 0',
   borderBottom: '1px solid $stroke40',
+  width: '100%',
+
+  '.partnerBenefitsWrapper': {
+    display: 'flex',
+    flexDirection: 'row',
+    maxWidth: '74rem',
+    gap: '4rem',
+
 
   '.partnerBenefitsImg': {
-
+    maxWidth: '50%',
     img: {
+      width: '100%',
+      objectFit: 'cover',
       border: '1px solid $stroke40',
-      borderLeftWidth: 0,
-      borderRadius: '0 20px 20px 0',
+      borderRadius: '20px',
       boxShadow: '4px 4px 16px rgba(0, 67, 127, 0.15)',
     },
   },
 
   '.partnerBenefitsContent': {
+    maxWidth: '50%',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'flex-end',
@@ -463,8 +512,6 @@ export const PartnerBenefits = styled('section', {
 
         boxShadow: '4px 4px 16px rgba(0, 67, 127, 0.15)',
 
-        width: 144,
-
         transition: 'all 0.4s',
 
         '&:hover': {
@@ -498,6 +545,8 @@ export const PartnerBenefits = styled('section', {
         },
       },
     },
+  },
+  
   },
 });
 

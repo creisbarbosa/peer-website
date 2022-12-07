@@ -83,11 +83,14 @@ export const {
 
       stroke40: "rgba(121, 177, 226, 0.4)"
     },
+  },
 
-    media: {
-      bp1: '(min-width: 640px)',
-      bp2: '(min-width: 768px)',
-      bp3: '(min-width: 1024px)',
-    },
-  }
+  media: {
+    xm: '(min-width: 340px)',
+    sm: '(min-width: 600px)',
+    md: '(min-width: 905px)',
+    lg: '(min-width: 1240px)',
+    xl: '(min-width: 1440px)',
+  },
+
 })

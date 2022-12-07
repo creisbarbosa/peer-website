@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
@@ -21,6 +21,7 @@
   "devDependencies": {
     "@types/node": "^18.11.11",
     "@types/react": "^18.0.26",
+    "firebase-tools": "^11.16.1",
     "typescript": "^4.9.3"
   }
 }
