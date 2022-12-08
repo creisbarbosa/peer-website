@@ -86,11 +86,10 @@ export const {
   },
 
   media: {
-    xm: '(min-width: 340px)',
+    xm: '(min-width: 360px)',
     sm: '(min-width: 600px)',
     md: '(min-width: 905px)',
     lg: '(min-width: 1240px)',
     xl: '(min-width: 1440px)',
   },
-
 })

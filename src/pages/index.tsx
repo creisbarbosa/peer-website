@@ -26,8 +26,8 @@ export default function Home() {
             <Image src={singleDot} alt="Company logo" />
             <Image src={doubleDot} alt="Company logo" />
           </div>
-          <h1>A forma mais fácil e <br /> rápida de comprar <br /> peças usinadas</h1>
-          <p>Somos uma plataforma digital de compra e venda de peças <br /> usinadas, com <strong>+ de 400</strong> fornecedores, que garante a <br /> qualidade e o prazo de entrega de demandas spot.</p>
+          <h1>A forma mais fácil e rápida de comprar peças usinadas</h1>
+          <p>Somos uma plataforma digital de compra e venda de peças usinadas, com <strong>+ de 400</strong> fornecedores, que garante a qualidade e o prazo de entrega de demandas spot.</p>
           <Button color="blue">Comprar peças usinadas</Button>
         </div>
       </LandingSection>
@@ -39,8 +39,7 @@ export default function Home() {
           <div className="operationHeader">
             <h2>Como funciona?</h2>
             <hr />
-            <p>Gerenciamos de forma integral - de ponta a ponta - os processos de compra e venda dos nossos parceiros para gerar valor e tornar a cadeia de usinagem de peças mais eficiente.</p>
-            <blockquote>Nosso maior objetivo é simplificar a vida de empresas que fornecem e compram peças usinadas sob demanda.</blockquote>
+            <p>Gerenciamos de forma integral - de ponta a ponta - os processos de compra e venda dos nossos parceiros para gerar valor e tornar a cadeia de usinagem de peças mais eficiente. <strong> Nosso maior objetivo é simplificar a vida de empresas que fornecem e compram peças usinadas sob demanda.</strong></p>
           </div>
           <div className="operationCards">
             <article className="clientOperationCard">
@@ -85,56 +84,50 @@ export default function Home() {
 
         <main>
           <div className="header">
-          <h2>Usinagem Conectada</h2>
-          <p>A Peerdustry facilita a compra e venda de peças usinadas sob demanda. Gerenciamos os processos de ponta a ponta, desde o pedido até a entrega, gerando eficiência para toda a cadeia de usinagem. E o melhor: fazemos tudo digitalmente!</p>
-          <div className="basicForms">
-            <svg width="43" height="44" viewBox="0 0 43 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="21.5" cy="22" r="21.5"/>
-            </svg>
-            <svg width="117" height="44" viewBox="0 0 117 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M83.1765 39.3301C87.2443 41.6694 91.7106 43.388 96.3372 43.383C107.985 43.1579 117.045 33.6354 116.649 21.9363C116.253 10.2374 106.549 0.738443 94.8866 0.538086C90.26 0.54304 85.9101 2.26724 82.001 4.61499C75.0268 8.80366 66.8172 11.2103 57.9658 11.2196C49.0194 11.2291 40.5626 8.78841 33.2514 4.53123C29.3471 2.25781 25.045 0.608482 20.5906 0.613577C8.81524 0.697707 -0.386616 10.2721 0.0125079 22.0601C0.41167 33.8481 10.2612 43.4025 22.0415 43.462C26.4958 43.4573 30.6859 41.799 34.436 39.5173C41.4582 35.245 49.7493 32.7865 58.6957 32.7769C67.547 32.7676 75.9191 35.1565 83.1765 39.3301Z"/>
-            </svg>
-            <svg width="43" height="44" viewBox="0 0 43 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="21.5" cy="22" r="21.5"/>
-            </svg>
-          </div>
-        </div>
-
-        <div className="cardsContainer">
-
-          <div className="secondCardWrapper">
-            <div className="imageCard">
-            </div>
-            <div className="card">
-              <div className="cardHeader">
-                <strong>Para quem compra</strong>
-                <h2>Compre peças usinadas com facilidade</h2>
-              </div>
-              <div className="content">
-                <p>Com a Peer você fabrica peças com especialistas e tem mais tempo para se dedicar ao seu negócio. 
-                </p>
-                <p>Todos os pedidos ficam disponíveis para centenas de parceiros de produção, eliminando longas etapas do processo de compras.</p>
-                <Button color="red">Solicitar cotação →</Button>
-              </div>
+            <h2>Usinagem Conectada</h2>
+            <p>A Peerdustry facilita a compra e venda de peças usinadas sob demanda. Gerenciamos os processos de ponta a ponta, desde o pedido até a entrega, gerando eficiência para toda a cadeia de usinagem. E o melhor: fazemos tudo digitalmente!</p>
+            <div className="basicForms">
+              <svg width="43" height="44" viewBox="0 0 43 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21.5" cy="22" r="21.5"/>
+              </svg>
+              <svg width="117" height="44" viewBox="0 0 117 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M83.1765 39.3301C87.2443 41.6694 91.7106 43.388 96.3372 43.383C107.985 43.1579 117.045 33.6354 116.649 21.9363C116.253 10.2374 106.549 0.738443 94.8866 0.538086C90.26 0.54304 85.9101 2.26724 82.001 4.61499C75.0268 8.80366 66.8172 11.2103 57.9658 11.2196C49.0194 11.2291 40.5626 8.78841 33.2514 4.53123C29.3471 2.25781 25.045 0.608482 20.5906 0.613577C8.81524 0.697707 -0.386616 10.2721 0.0125079 22.0601C0.41167 33.8481 10.2612 43.4025 22.0415 43.462C26.4958 43.4573 30.6859 41.799 34.436 39.5173C41.4582 35.245 49.7493 32.7865 58.6957 32.7769C67.547 32.7676 75.9191 35.1565 83.1765 39.3301Z"/>
+              </svg>
+              <svg width="43" height="44" viewBox="0 0 43 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21.5" cy="22" r="21.5"/>
+              </svg>
             </div>
           </div>
-
-          <div className="thirdCardWrapper">
-            <div className="card">
-              <div className="cardHeader">
-                <strong>Para quem quer ser um parceiro de produção</strong>
-                <h2>Gere receita a partir de máquinas ociosas</h2>
+          <div className="cardsContainer">
+            <div className="secondCardWrapper">
+              <div className="imageCard">
               </div>
-              <div className="content">
-                <p>Com a Peerdustry, um leque de oportunidades se abre, possibilitando que fornecedores gerem receita a partir de máquinas ociosas. A plataforma também possibilita que as empresas passem a acessar mercados que não conseguiam alcançar anteriormente +</p>
-                <Button color="red">Seja um parceiro →</Button>
+              <div className="card">
+                <div className="cardHeader">
+                  <strong>Para quem compra</strong>
+                  <h2>Compre peças usinadas sem precisar cotar</h2>
+                </div>
+                <div className="content">
+                  <p>Com a Peer você fabrica peças com especialistas e tem mais tempo para se dedicar ao seu negócio. Todos os pedidos ficam disponíveis para centenas de parceiros de produção, eliminando longas etapas do processo de compras.</p>
+                  <Button color="red">Solicitar cotação →</Button>
+                </div>
               </div>
             </div>
-            <div className="imageCard">
+            <div className="thirdCardWrapper">
+              <div className="card">
+                <div className="cardHeader">
+                  <strong>Para quem quer ser um parceiro de produção</strong>
+                  <h2>Gere receita a partir de máquinas ociosas</h2>
+                </div>
+                <div className="content">
+                  <p>Com a Peerdustry, um leque de oportunidades se abre, possibilitando que fornecedores gerem receita a partir de máquinas ociosas. A plataforma também possibilita que as empresas passem a acessar mercados que não conseguiam alcançar anteriormente</p>
+                  <Button color="red">Seja um parceiro →</Button>
+                </div>
+              </div>
+              <div className="imageCard">
+              </div>
             </div>
           </div>
-
-        </div>
         </main>
 
 
@@ -152,9 +145,6 @@ export default function Home() {
               <div>
                 <svg width="43" height="44" viewBox="0 0 43 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="21.5" cy="22" r="21.5" fill="#003362"/>
-                </svg>
-                <svg width="117" height="44" viewBox="0 0 117 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M83.1765 39.3301C87.2443 41.6694 91.7106 43.388 96.3372 43.383C107.985 43.1579 117.045 33.6354 116.649 21.9363C116.253 10.2374 106.549 0.738443 94.8866 0.538086C90.26 0.54304 85.9101 2.26724 82.001 4.61499C75.0268 8.80366 66.8172 11.2103 57.9658 11.2196C49.0194 11.2291 40.5626 8.78841 33.2514 4.53123C29.3471 2.25781 25.045 0.608482 20.5906 0.613577C8.81524 0.697707 -0.386616 10.2721 0.0125079 22.0601C0.41167 33.8481 10.2612 43.4025 22.0415 43.462C26.4958 43.4573 30.6859 41.799 34.436 39.5173C41.4582 35.245 49.7493 32.7865 58.6957 32.7769C67.547 32.7676 75.9191 35.1565 83.1765 39.3301Z"  fill="#CFE2F2"/>
                 </svg>
                 <svg width="117" height="44" viewBox="0 0 117 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M83.1765 39.3301C87.2443 41.6694 91.7106 43.388 96.3372 43.383C107.985 43.1579 117.045 33.6354 116.649 21.9363C116.253 10.2374 106.549 0.738443 94.8866 0.538086C90.26 0.54304 85.9101 2.26724 82.001 4.61499C75.0268 8.80366 66.8172 11.2103 57.9658 11.2196C49.0194 11.2291 40.5626 8.78841 33.2514 4.53123C29.3471 2.25781 25.045 0.608482 20.5906 0.613577C8.81524 0.697707 -0.386616 10.2721 0.0125079 22.0601C0.41167 33.8481 10.2612 43.4025 22.0415 43.462C26.4958 43.4573 30.6859 41.799 34.436 39.5173C41.4582 35.245 49.7493 32.7865 58.6957 32.7769C67.547 32.7676 75.9191 35.1565 83.1765 39.3301Z"  fill="#CFE2F2"/>
@@ -195,22 +185,26 @@ export default function Home() {
             </article>
           </div>
           <div className="numbersCardsMachines">
-            <article>
-              <Image src={ConvencionalLatheImg} alt=""/>
-              <p><strong>+40</strong> Tornos convencionais</p>
-            </article>
-            <article>
-              <Image src={CNCLatheImg} alt=""/>
-              <p><strong>+40</strong> Tornos CNC</p>
-            </article>
-            <article>
-              <Image src={MillingCutterImg} alt=""/>
-              <p><strong>+40</strong> Fresas CNC</p>
-            </article>
-            <article>
-              <Image src={MachiningCenterImg} alt=""/>
-              <p><strong>+50</strong> Centros de usinagem</p>
-            </article>
+            <div>
+              <article>
+                <Image src={ConvencionalLatheImg} alt=""/>
+                <p><strong>+40</strong> Tornos convencionais</p>
+              </article>
+              <article>
+                <Image src={CNCLatheImg} alt=""/>
+                <p><strong>+40</strong> Tornos CNC</p>
+              </article>
+            </div>
+            <div>
+              <article>
+                <Image src={MillingCutterImg} alt=""/>
+                <p><strong>+40</strong> Fresas CNC</p>
+              </article>
+              <article>
+                <Image src={MachiningCenterImg} alt=""/>
+                <p><strong>+50</strong> Centros de usinagem</p>
+              </article>
+            </div>
             
           </div>  
         </div>

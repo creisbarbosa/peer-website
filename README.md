@@ -5,16 +5,16 @@
 	Under construction...
 </h3>
 
-## About
+## 1. About
 
 This is a project for the company’s website using Next.js, a framework that makes it easy to create ‘universal’ React apps that do both client and server side rendering.
 
-##### 🖥️ [Preview](https://peer-website-1d86a.web.app/)
+##### 🖥️ [Preview](external.ink?to=https://peer-website-1d86a.web.app/)
 
-## Built With
+## 2. Built With
 
 ##### Node v18.12.0
-
+S
 ##### Npm 9.1.3
 
 ##### [Next.js](https://nextjs.org/)
@@ -31,11 +31,11 @@ This is a project for the company’s website using Next.js, a framework that ma
 
 ##### Figma
 
-## Design
+## 3. Design
 
 You can find the website UI and the company's Design System for reference trough this [link](https://www.figma.com/file/LATwL1cRB3Zd1h5lbmzLFM/Website?node-id=196%3A2032&t=5LElUSftVaufJFJ0-1). You`ll need a Figma account to have access to the project.
 
-## Running locally in development mode
+## 4. Running locally in development mode
 
 To get started, just clone the repository and run `npm install && npm run dev`.
   
@@ -45,7 +45,7 @@ npm install
 npm run dev
 ```
 
-## Building and deploying in production
+## 5. Building and deploying in production
 
 If you wanted to run this site in production, you should install modules then build the site with `npm run build` and run it with `npm start`:
 
@@ -56,9 +56,9 @@ npm start
 
 You should run `npm run build` again any time you make changes to the site.
 
-## Deploying to the cloud with Firebase
+## 6. Deploying to the cloud with Firebase
 
-  To deploy to production on [Firebase](https://firebase.google.com/) your will need to create an account with you google e-mail and request permission to become a member to the current project owner: cassio.reis@peerdustry.com.
+  To deploy to production on [Firebase](https://firebase.google.com/) your will need to create an account with your google e-mail and request permission to become a member to the current project owner: cassio.reis@peerdustry.com.
   
   If you're the project owner, you can add new members following this steps:
   
@@ -96,3 +96,7 @@ You should run `npm run build` again any time you make changes to the site.
   ```
 
   ---
+
+<p align="center">
+  You're good to go
+</p>
