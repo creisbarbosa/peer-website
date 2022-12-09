@@ -3,12 +3,18 @@ import { styled } from "..";
 export const Button = styled('button', {
   boxSizing: "border-box",
   borderRadius: 8,
-  fontWeight: 700,
-  fontSize: 14,
-  lineHeight: '16px',
+  fontWeight: '700',
+  fontSize: '0.875rem',
+  lineHeight: '1rem',
   padding: "12px 24px",
   maxWidth: '16rem',
   cursor: 'pointer',
+
+  a: {
+    textDecoration: "none",
+    color: "inherit",
+    fontSize: '0.875rem',
+  },
 
   variants: {
     color: {
@@ -34,7 +40,7 @@ export const Button = styled('button', {
 
   '&:hover': {
     filter: 'brightness(1.2)'
-  }
+  },
 })
 
 export const IconButton = styled('button', {

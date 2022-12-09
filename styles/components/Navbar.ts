@@ -19,7 +19,6 @@ export const Container = styled('nav', {
 
   li: {
     listStyle: 'none',
-
     transition: 'all 0.3s',
 
     '&:hover': {
@@ -27,13 +26,13 @@ export const Container = styled('nav', {
     },
   },
 
-  a: {
+  '.menu': {
     display: 'flex',
     alignItems: 'center',
     height: '48px',
     padding: '0.75rem',
     fontWeight: 400,
-    fontSize: '0.75rem',
+    fontSize: '0.875rem',
     color: '$blue500',
     textDecoration: 'none',
   },

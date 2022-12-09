@@ -15,10 +15,10 @@ export default function Navbar() {
       <a href="http://peerdustry.com"><Image src={logoImg} alt="Company logo" /></a>
       <div>
         <ul>
-          <li><a href="">Compre</a></li>
-          <li><a href="">Seja parcerio</a></li>
-          <li><a href="">Recursos</a></li>
-          <li><a href="">A Peerdustry <CaretDown size={15} weight="bold" /> </a></li>
+          <li><a className="menu" href="https://www.peerdustry.com/comprar-pecas-usinadas/" target="blank">Compre</a></li>
+          <li><a className="menu" href="https://www.peerdustry.com/parceiro-de-manufatura/" target="blank">Seja parceiro</a></li>
+          <li><a className="menu" href="https://www.peerdustry.com/materiais/" target="blank">Recursos</a></li>
+          <li><a className="menu" href="https://www.peerdustry.com/sobre-peerdustry/" target="blank">A Peerdustry <CaretDown size={15} weight="bold" /> </a></li>
         </ul>
       </div>
       <ButtonContainer>
@@ -26,9 +26,11 @@ export default function Navbar() {
           <strong>Entrar</strong>
           <SignIn size={20} weight="bold" />
         </IconButton>
-        <Button color="blue">
-          Fale com um consultor
-        </Button>
+        <a href="https://wa.me/5511960840395" target="blank">
+          <Button color="blue">
+            Fale com um consultor
+          </Button>
+        </a>
       </ButtonContainer>
     </Container>
   )

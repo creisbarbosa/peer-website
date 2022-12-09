@@ -27,8 +27,9 @@ export default function Home() {
             <Image src={doubleDot} alt="Company logo" />
           </div>
           <h1>A forma mais fácil e rápida de comprar peças usinadas</h1>
-          <p>Somos uma plataforma digital de compra e venda de peças usinadas, com <strong>+ de 400</strong> fornecedores, que garante a qualidade e o prazo de entrega de demandas spot.</p>
-          <Button color="blue">Comprar peças usinadas</Button>
+          <h2>Compre peças usinadas em menos de 24h <br /> sem se preocupar com cotação!</h2>
+          <p>Somos uma plataforma digital de compra e venda de peças usinadas, com <strong>+ de 400</strong> parceiros de produção, que garante a qualidade e o prazo de entrega de demandas spot.</p>
+          <a href="https://www.peerdustry.com/comprar-pecas-usinadas/#contact" target="blank"><Button color="blue">Comprar peças usinadas</Button></a>
         </div>
       </LandingSection>
 
@@ -109,7 +110,7 @@ export default function Home() {
                 </div>
                 <div className="content">
                   <p>Com a Peer você fabrica peças com especialistas e tem mais tempo para se dedicar ao seu negócio. Todos os pedidos ficam disponíveis para centenas de parceiros de produção, eliminando longas etapas do processo de compras.</p>
-                  <Button color="red">Solicitar cotação →</Button>
+                  <a href="https://www.peerdustry.com/comprar-pecas-usinadas/#contact" target="blank"><Button color="red">Compre peças usinadas →</Button></a>
                 </div>
               </div>
             </div>
@@ -121,7 +122,7 @@ export default function Home() {
                 </div>
                 <div className="content">
                   <p>Com a Peerdustry, um leque de oportunidades se abre, possibilitando que fornecedores gerem receita a partir de máquinas ociosas. A plataforma também possibilita que as empresas passem a acessar mercados que não conseguiam alcançar anteriormente</p>
-                  <Button color="red">Seja um parceiro →</Button>
+                  <a href="https://www.peerdustry.com/parceiro-de-manufatura/" target="blank"><Button color="red">Seja um parceiro →</Button></a>
                 </div>
               </div>
               <div className="imageCard">
@@ -188,21 +189,21 @@ export default function Home() {
             <div>
               <article>
                 <Image src={ConvencionalLatheImg} alt=""/>
-                <p><strong>+40</strong> Tornos convencionais</p>
+                <p><strong>+404</strong> Tornos convencionais</p>
               </article>
               <article>
                 <Image src={CNCLatheImg} alt=""/>
-                <p><strong>+40</strong> Tornos CNC</p>
+                <p><strong>+303</strong> Tornos CNC</p>
               </article>
             </div>
             <div>
               <article>
                 <Image src={MillingCutterImg} alt=""/>
-                <p><strong>+40</strong> Fresas CNC</p>
+                <p><strong>+55</strong> Fresas CNC</p>
               </article>
               <article>
                 <Image src={MachiningCenterImg} alt=""/>
-                <p><strong>+50</strong> Centros de usinagem</p>
+                <p><strong>+228</strong> Centros de usinagem</p>
               </article>
             </div>
             
@@ -240,7 +241,7 @@ export default function Home() {
                   <strong>Compra de MP + Frete</strong>
                 </article>
               </div>
-              <Button color="red">Fale com a Peer</Button>
+               <a href="https://wa.me/5511960840395" target="blank"><Button color="red">Fale com a Peer</Button></a>
           </div>
         </div>
         
@@ -250,20 +251,22 @@ export default function Home() {
         <div>
           <h2>Ganhe eficiência usando a modelagem 3D em desenhos técnicos!</h2>
           <p>Baixe agora o e-book <strong>&#34;Desenho Técnico: por que usar a modelagem 3D?&#34;</strong> e entenda quais são as principais vantagens do desenho 3D para o mercado de usinagem e como ele pode otimizar a sua rotina de compra de peças usinadas.</p>
-          <Button color="white"> Baixe agora [PDF] ↓ </Button>
+          <a href="https://conteudo.peerdustry.com/desenho-tecnico-por-que-usar-modelagem-3d" target="blank"><Button color="white">Baixe agora [PDF] ↓</Button></a>
         </div>
       </CADSection>
 
       <VideoSection>
-        <header>
-          <h2>Conte com o suporte da Peerdustry de ponta a ponta</h2>
-          <hr />
-          <p>Na nossa visão, a compra e a venda de peças usinadas devem fazer parte de um único ecossistema, trabalhando de forma integrada e otimizada. Utilizamos tecnologia para oferecer ao mercado de peças usinadas um novo e inovador modelo de negócios, resolvendo problemas de ponta a ponta, desde o início do processo de compra/venda até a entrega dos pedidos.
-          </p>
-          <Button color="blue">Saiba mais →</Button>
-        </header>
-        <iframe src="https://www.youtube.com/embed/hZ1Y0pXYBRQ?controls=1">
-        </iframe>
+        <div>
+          <header>
+            <h2>Conte com o suporte da Peerdustry de ponta a ponta</h2>
+            <hr />
+            <p>Na nossa visão, a compra e a venda de peças usinadas devem fazer parte de um único ecossistema, trabalhando de forma integrada e otimizada. Utilizamos tecnologia para oferecer ao mercado de peças usinadas um novo e inovador modelo de negócios, resolvendo problemas de ponta a ponta, desde o início do processo de compra/venda até a entrega dos pedidos.
+            </p>
+             <a href="https://www.peerdustry.com/sobre-peerdustry/" target="blank"><Button color="blue">Saiba mais →</Button></a>
+          </header>
+          <iframe src="https://www.youtube.com/embed/hZ1Y0pXYBRQ?controls=1">
+          </iframe>
+        </div>
       </VideoSection>
 
       <AlliedCompaniesSlider/>
@@ -284,7 +287,7 @@ export default function Home() {
                 <h3>Como economizar na compra de peças usinadas?</h3>
                 <strong>18 de Novembro de 2022</strong>
                 <p>Entenda como a Peer ajuda a economizar na compra de peças usinadas, aumentado a eficiência da sua empresa. Veja o case de uma ferramentaria!</p>
-                <Button color="blue">Leia mais →</Button>
+                <a href="https://www.peerdustry.com/como-economizar-na-compra-de-pecas-usinadas/" target="blank"><Button color="blue">Leia mais →</Button></a>
               </div>
             </article>
             <article>
@@ -295,7 +298,7 @@ export default function Home() {
                 <h3>Custo de matéria-prima afeta menos as indústrias de pequeno porte.</h3>
                 <strong>10 de Outubro de 2022</strong>
                 <p>Entenda como a Peer ajuda compradores e fornecedores de peças usinadas a economizar na escolha e compra de matéria-prima</p>
-                <Button color="blue">Leia mais →</Button>
+                <a href="https://www.peerdustry.com/custo-de-materia-prima-afeta-menos-as-industrias-de-pequeno-porte-aponta-cni/" target="blank"><Button color="blue">Leia mais →</Button></a>
               </div>
             </article>
           </div> 

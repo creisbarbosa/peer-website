@@ -88,7 +88,7 @@ You should run `npm run build` again any time you make changes to the site.
   3. Deploy using **build** and **firebase deploy**
 
   ```sh
-  npx run build
+  npm run build
   ```
 
   ```sh

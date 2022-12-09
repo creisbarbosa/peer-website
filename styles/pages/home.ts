@@ -31,6 +31,11 @@ export const LandingSection = styled('div', {
     h1: {
       fontSize: '2.5rem'
     },
+
+    h2: {
+      color: '$red800',
+      lineHeight: '1.75rem',
+    },
     
     p: {
       fontSize: '1rem',
@@ -593,11 +598,11 @@ export const ConnectedMachiningSection = styled('section', {
 export const CADSection = styled('section', {
   display: 'flex',
   justifyContent: 'center',
-  padding: '6rem 0',
   width: '100%',
   borderBottom: '1px solid $stroke40',
-
+  
   div:{
+    margin: '2rem',
     backgroundImage: `url(${CADImg.src})`,
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
@@ -605,28 +610,79 @@ export const CADSection = styled('section', {
 
     borderRadius: 16,
     color: '$white',
-    padding: '4rem',
-    maxWidth: '67rem',
+    padding: '2rem',
+
 
     display: 'flex',
     flexDirection: 'column',
-    gap: 32,
+    gap: '1rem',
     alignItems: 'flex-end',
 
     h2: {
-      padding: '0 9.9rem',
-      fontWeight: '700',
-      fontSize: '40px',
-      lineHeight: '110%',
-      textAlign: 'center',
+      fontSize: '1.25rem',
     },
 
     p: {
-      fontWeight: '500',
-      fontSize: '1rem',
+      fontSize: '0.875rem',
       lineHeight: '1.5rem',
-    }
-  }
+    },
+  },
+
+  '@sm': {
+    div: {
+      h2: {
+        fontSize: '2rem',
+      },
+      p: {
+        fontSize: '1rem',
+        lineHeight: '1.5rem',
+      },
+    },
+  },
+
+  '@md': {
+    div: {
+      width: '85%',
+      maxWidth: '51rem',
+      margin: '4rem',
+      h2: {
+        fontSize: '2rem',
+      },
+      p: {
+        fontSize: '1rem',
+        lineHeight: '1.5rem',
+      },
+    },
+  },
+
+  '@lg': {
+    div: {
+      width: '80%',
+      maxWidth: '60rem',
+      margin: '4rem',
+      padding: '4rem',
+      gap: '2rem',
+      alignItems: 'center',
+      h2: {
+        fontSize: '2.5rem',
+        textAlign: 'center',
+        maxWidth: '78%',
+      },
+      p: {
+        fontSize: '1rem',
+        lineHeight: '1.5rem',
+        maxWidth: '70%',
+      },
+    },
+  },
+
+  '@xl': {
+    div: {
+      width: '78%',
+      maxWidth: '67rem',
+    },
+  },
+
 });
 
 export const NumbersSection = styled('section', {
@@ -873,6 +929,7 @@ export const NumbersSection = styled('section', {
 
   '@xl': {
     '.numbersWrapper': {
+      width: '78%',
       maxWidth: '75rem',
     },
   },
@@ -990,52 +1047,116 @@ export const PartnerBenefits = styled('section', {
 });
 
 export const VideoSection = styled('section', {
-  padding: '8rem 0',
-  borderBottom: '1px solid $stroke40',
-  backgroundImage: 'linear-gradient(90deg, $slate200 40%, #FFFFFF 100%)',
-  width: '100%',
   display: 'flex',
-  justifyContent: 'center',
   alignItems: 'center',
-  gap: '2rem',
+  justifyContent: 'center',
+  width: '100%',
 
-  header: {
+  backgroundImage: 'linear-gradient(90deg, $slate200 40%, #FFFFFF 100%)',
+  borderBottom: '1px solid $stroke40',
+
+  div: {
     display: 'flex',
     flexDirection: 'column',
-    padding: 32,
-    gap: 16,
-    maxWidth: 552,
+    alignItems: 'center',
+    gap: '2rem',
+    padding: '2rem',
 
-    hr: {
-      width: '10rem',
-      height: 2,
-      backgroundColor: '$red600',
-      border: 'none',
-      borderRadius: 4,
+    header: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: '1rem',
+  
+      hr: {
+        width: '10rem',
+        height: 2,
+        backgroundColor: '$red600',
+        border: 'none',
+        borderRadius: 4,
+      },
+  
+      h2: {
+        fontSize: '2rem',
+        lineHeight: '2.125rem',
+      },
+  
+      p: {
+        lineHeight: '24px',
+      },
+  
+      button: {
+        maxWidth: '100%',
+      },
     },
-
-    h2: {
-      fontSize: '2rem'
-    },
-
-    p: {
-      lineHeight: '24px',
-    },
-
-    button: {
-      maxWidth: '146px',
+  
+    iframe: {
+  
+      width: '100%',
+      height: 'auto',
+  
+      border: '1px solid $stroke40',
+      borderRadius: '12px',
+      boxShadow: '4px 4px 16px rgba(0, 67, 127, 0.15)',
     },
   },
 
-  iframe: {
+  '@sm': {
+    div:{
+      iframe: {
+        width: '100%',
+        height: '18rem',
+      },
+    },
+  },
 
-    width: '552px',
-    height: '311px',
+  '@md': {
+    div: {
+      display: 'grid',
+      gridTemplateColumns: '1fr 1fr',
+      padding: '4rem',
 
-    border: '1px solid $stroke40',
-    borderRadius: '20px',
-    boxShadow: '4px 4px 16px rgba(0, 67, 127, 0.15)',
-  }
+      width: '85%',
+      maxWidth: '48.5rem',
+
+      header: {
+        padding: '1rem',
+        h2: {
+          fontSize: '1.5rem',
+        },
+        p: {
+          fontSize: '0.875rem',
+          lineHeight: '1.25rem',
+        },
+        button: {
+          maxWidth: '10rem',
+        },
+      },
+      iframe: {
+        width: '24rem',
+        height: '13rem',
+      },
+    },
+  },
+
+  '@lg': {
+    div: {
+      width: '80%',
+      maxWidth: '64rem',
+
+      iframe: {
+        width: '32rem',
+        height: '18rem',
+      },
+    },
+  },
+
+  '@xl': {
+    div: {
+      width: '78%',
+      maxWidth: '77rem',
+    },
+  },
+
 })
 
 export const BlogSection = styled('section',{
