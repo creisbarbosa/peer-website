@@ -58,7 +58,7 @@ export default function Home() {
               O time de engenharia da Peerdustry trabalha para entender as necessidades das peças usinadas dos nossos clientes, analisando os processos de manufatura, custos de produção e prazo de entrega. Com base nisso, irá selecionar o fornecedor mais adequado para a sua demanda, garantindo e acompanhando todo o processo de manufatura de ponta a ponta. <br />
               - <br />
               Dessa maneira, geramos economia de centenas de horas, energia, esforço e dinheiro para os nossos clientes na aquisição das peças usinadas.
-</p>
+              </p>
             </article>
             <article className="peerdustryOperationCard">
               <div>
@@ -172,7 +172,7 @@ export default function Home() {
               </div>
               <div className="numbersInfo">
                 <h2>+36.000</h2>
-                <strong>Peças únicas usinadas</strong>
+                <strong>Peças usinadas</strong>
               </div>
                 <p>Por meio da tecnologia de análise de dados conseguimos entregar os pedidos certos para os parceiros de manufatura ideais, otimizando a produção de peças usinadas.</p>
             </article>
@@ -192,7 +192,7 @@ export default function Home() {
                 </svg>
               </div>
               <div className="numbersInfo">
-                <h2>+14.000 h</h2>
+                <h2>+350.000 hr</h2>
                 <strong>Capacidade de usinagem / mês</strong>
               </div>
                 <p>O registro de cada uma das máquinas dos nossos parceiros de usinagem nos possibilita dimensionar nossa capacidade produtiva em horas.</p>
@@ -200,31 +200,30 @@ export default function Home() {
           </div>
           <div className="numbersCardsMachines">
             <div>
-              <article>
-                <Image src={ConvencionalLatheImg} alt=""/>
-                <p><strong>+404</strong> Tornos convencionais</p>
+            <article>
+                <Image src={MachiningCenterImg} alt=""/>
+                <p><strong>+600</strong> Centros de Usinagem</p>
               </article>
               <article>
                 <Image src={CNCLatheImg} alt=""/>
-                <p><strong>+303</strong> Tornos CNC</p>
+                <p><strong>+300</strong> Tornos CNC</p>
               </article>
             </div>
             <div>
+            <article>
+                <Image src={ConvencionalLatheImg} alt=""/>
+                <p><strong>+200</strong> Centros de Torneamento</p>
+              </article>
               <article>
                 <Image src={MillingCutterImg} alt=""/>
-                <p><strong>+55</strong> Fresas CNC</p>
-              </article>
-              <article>
-                <Image src={MachiningCenterImg} alt=""/>
-                <p><strong>+228</strong> Centros de usinagem</p>
+                <p><strong>+50</strong> Fresas CNC</p>
               </article>
             </div>
-            
           </div>  
         </div>
       </NumbersSection>
 
-      <PartnerBenefits>
+      {/* <PartnerBenefits>
         <div className="partnerBenefitsWrapper">
           <div className="partnerBenefitsImg">
             <Image src={Image01} alt=""></Image>
@@ -258,7 +257,7 @@ export default function Home() {
           </div>
         </div>
         
-      </PartnerBenefits>
+      </PartnerBenefits> */}
 
       <CADSection>
         <div>
