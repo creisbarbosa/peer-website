@@ -1,3 +1,5 @@
+import { Button } from "./Button";
+
 export default function Navbar() {
   return (
     <nav className="flex sm:justify-center bg-slate-200 border-solid border-b border-stroke-40">
@@ -12,8 +14,8 @@ export default function Navbar() {
           <a href={url} className="px-6 py-6 text-blue-500 font-regular hover:bg-slate-100" key="">{title}</a>
         ))}
       </div>
-      <button className="flex px-2 py-3 bg-blue-50 border-solid border-stroke-40">Entrar</button>
-      <button>Falar com nossos consultores</button>
+      <Button className="bg-blue-50 text-blue-500 border-solid border-stroke-40 hover:bg-white">Entrar</Button>
+      <Button className="text-white border-blue-400">Falar com nossos consultores</Button>
     </nav>
   )
 }
