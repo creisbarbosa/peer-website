@@ -85,7 +85,7 @@ export const LandingSection = styled('div', {
 
       h1: {
         fontSize: '4rem',
-        maxWidth: '37rem',
+        maxWidth: '50rem',
       },
 
       p: {

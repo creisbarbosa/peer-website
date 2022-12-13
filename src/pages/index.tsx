@@ -26,9 +26,9 @@ export default function Home() {
             <Image src={singleDot} alt="Company logo" />
             <Image src={doubleDot} alt="Company logo" />
           </div>
-          <h1>A forma mais fácil e rápida de comprar peças usinadas</h1>
-          <h2>Compre peças usinadas em menos de 24h <br /> sem se preocupar com cotação!</h2>
-          <p>Somos uma plataforma digital de compra e venda de peças usinadas, com <strong>+ de 400</strong> parceiros de produção, que garante a qualidade e o prazo de entrega de demandas spot.</p>
+          <h1>Compre peças usinadas em menos de 24h, sem se preocupar com cotação</h1>
+          <p> Através de uma plataforma digital com <strong>centenas de fornecedores</strong> de usinagem, a Peerdustry possibilita comprar peças usinadas spot em poucos cliques, além de garantir o prazo de entrega acordado e qualidade das peças adquiridas.
+          </p>
           <a href="https://www.peerdustry.com/comprar-pecas-usinadas/#contact" target="blank"><Button color="blue">Comprar peças usinadas</Button></a>
         </div>
       </LandingSection>
@@ -40,7 +40,7 @@ export default function Home() {
           <div className="operationHeader">
             <h2>Como funciona?</h2>
             <hr />
-            <p>Gerenciamos de forma integral - de ponta a ponta - os processos de compra e venda dos nossos parceiros para gerar valor e tornar a cadeia de usinagem de peças mais eficiente. <strong> Nosso maior objetivo é simplificar a vida de empresas que fornecem e compram peças usinadas sob demanda.</strong></p>
+            <p>A Peerdustry gerencia de ponta a ponta o processo de compra e venda de peças usinadas de baixo volume. Nossa plataforma conta atualmente com <strong> mais de 400 fornecedores </strong> e clientes nos mais diversos segmentos, o que garante um ganho de eficiência em toda a cadeia produtiva.</p>
           </div>
           <div className="operationCards">
             <article className="clientOperationCard">
@@ -53,7 +53,12 @@ export default function Home() {
                 </svg>
               </div>
               <h3>Quem consome peças usinadas</h3>
-              <p>Em uma ponta temos empresas que consomem peças usinadas de baixo volume sob demanda, para a montagem de produtos finais, como máquinas e ferramentas. <strong>Produza mais em menos tempo e ganhe eficiência e produtividade!</strong></p>
+              <p>Para comprar peças usinadas na plataforma da Peerdustry, basta enviar o desenho técnico e preencher as informações solicitadas. Feito isto, nossos parceiros de manufatura irão começar a fabricação e você receberá as peças com qualidade e dentro do prazo acordado. <br />
+              - <br />
+              O time de engenharia da Peerdustry trabalha para entender as necessidades das peças usinadas dos nossos clientes, analisando os processos de manufatura, custos de produção e prazo de entrega. Com base nisso, irá selecionar o fornecedor mais adequado para a sua demanda, garantindo e acompanhando todo o processo de manufatura de ponta a ponta. <br />
+              - <br />
+              Dessa maneira, geramos economia de centenas de horas, energia, esforço e dinheiro para os nossos clientes na aquisição das peças usinadas.
+</p>
             </article>
             <article className="peerdustryOperationCard">
               <div>
@@ -62,7 +67,10 @@ export default function Home() {
                 </svg>
               </div>
               <h3>Peerdustry</h3>
-              <p>Integrando as duas pontas da cadeia de usinagem de peças. Unimos empresas com capacidade produtiva ociosa com outras que apresentam demanda por fabricação. Além de eliminar os prazos de negociação, a Peer diminui todos os custos envolvidos no processo de compra e venda de peças.</p>
+              <p>Nascida em 2016, a Peerdustry é referência na América Latina como a primeira plataforma digital de manufatura sob demanda. Na via da indústria 4.0, a plataforma une empresas que precisam comprar peças usinadas com fornecedores de usinagem que apresentam capacidade ociosa. 
+              <br /> - <br />
+              A plataforma da Peerdustry elimina os prazos de negociação e alinhamentos existentes no mercado tradicional, além de reduzir os principais custos envolvidos no processo de compra e venda de peças usinadas, levando dinamismo e eficiência para toda a cadeia produtiva.
+              </p>
             </article>
             <article className="partnersOperationCard">
               <div>
@@ -74,7 +82,12 @@ export default function Home() {
                 </svg>
               </div>
               <h3>Parceiros de manufatura</h3>
-              <p>Na outra ponta temos os fabricantes de peças usinadas, que por meio da Peer conseguem capturar novos trabalhos, utilizando maquinário ocioso para atender novos clientes, e ainda <strong>acabam com dores de cabeça relacionadas com os altos custos do processo de vendas.</strong></p>
+              <p>Por meio da Peerdustry, fornecedores de usinagem parceiros conseguem alcançar novos mercados e fechar novos negócios utilizando a sua capacidade produtiva ociosa para atender demandas da plataforma, além de eliminarem as dores de cabeça relacionadas ao alto custo do processo de vendas. 
+              <br /> - <br />
+              A plataforma da Peerdustry elimina em 100% o custo relacionado à aquisição de clientes. Além disso, enviamos a matéria prima e todas as informações necessárias para a manufatura das peças, nosso parceiro apenas se preocupa apenas com a produção. 
+              <br /> - <br />
+              Nosso objetivo é que nossos parceiros foquem no seu Core Business de fabricação e não perca tempo e dinheiro com outras atividades que não agregam no crescimento da empresa.
+              </p>
             </article>
           </div> 
         </div>
@@ -86,7 +99,7 @@ export default function Home() {
         <main>
           <div className="header">
             <h2>Usinagem Conectada</h2>
-            <p>A Peerdustry facilita a compra e venda de peças usinadas sob demanda. Gerenciamos os processos de ponta a ponta, desde o pedido até a entrega, gerando eficiência para toda a cadeia de usinagem. E o melhor: fazemos tudo digitalmente!</p>
+            <p>A Peerdustry facilita a compra e venda de peças usinadas sob demanda. Do pedido até a entrega, gerenciamos todos os processos de ponta a ponta, gerando eficiência para toda a cadeia de usinagem. Compradores reduzem seu lead time e fornecedores ganham novos pedidos, praticamente sem esforço. E o melhor: você não paga mais nada por isso!</p>
             <div className="basicForms">
               <svg width="43" height="44" viewBox="0 0 43 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="21.5" cy="22" r="21.5"/>
