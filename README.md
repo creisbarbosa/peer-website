@@ -21,7 +21,7 @@ S
 
 ##### [Typescript](https://nextjs.org/)
 
-##### [Stitches](https://stitches.dev/ )
+##### [Tailwind](https://tailwindcss.com/docs/guides/nextjs)
 
 ##### [Phosphor-react](https://github.com/phosphor-icons/phosphor-react)
 
