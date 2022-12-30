@@ -27,15 +27,17 @@ export default function Footer() {
           </div>
           <ul className="flex flex-col gap-4">
             <li className="font-bold font-display">NAVEGUE</li>
-            <li className="font-light text-sm hover:text-slate-300"><a href="">Compre peças usinadas</a></li>
-            <li className="font-light text-sm hover:text-slate-300"><a href="">Seja um Parceiro da Peer</a></li>
-            <li className="font-light text-sm hover:text-slate-300"><a href="">Sobre</a></li>
+            <li className="font-light text-sm hover:text-slate-300"><a href="/buy">Compre peças usinadas</a></li>
+            <li className="font-light text-sm hover:text-slate-300"><a href="/partners">Seja um Parceiro da Peer</a></li>
+            <li className="font-light text-sm hover:text-slate-300"><a href="/about">Sobre a Peerdustry</a></li>
           </ul>
           <ul className="flex flex-col gap-4">
             <li className="font-bold font-display">RECURSOS</li>
-            <li className="font-light text-sm hover:text-slate-300"><a href="">Blog da usinagem</a></li>
-            <li className="font-light text-sm hover:text-slate-300"><a href="">Academia Peerdustry</a></li>
-            <li className="font-light text-sm hover:text-slate-300"><a href="">FAQ</a></li>
+            <li className="font-light text-sm hover:text-slate-300"><a href="https://www.peerdustry.com/blog/">Blog da usinagem</a></li>
+            <li className="font-light text-sm hover:text-slate-300"><a href="https://www.peerdustry.com/academia-peerdustry/">Academia Peerdustry</a></li>
+            <li className="font-light text-sm hover:text-slate-300"><a href="https://www.peerdustry.com/materiais/">Materiais educativos</a></li>
+            <li className="font-light text-sm hover:text-slate-300"><a href="https://conteudo.peerdustry.com/bate-papo">Bate Papo</a></li>
+            <li className="font-light text-sm hover:text-slate-300"><a href="https://www.peerdustry.com/faq-peerdustry/">FAQ</a></li>
           </ul>
           <ul className="flex flex-col gap-4">
             <li className="font-bold font-display">CONTATO</li>
