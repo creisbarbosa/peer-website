@@ -24,9 +24,37 @@ export default function Partners() {
               <path d="M83.1765 39.3301C87.2443 41.6694 91.7106 43.388 96.3372 43.383C107.985 43.1579 117.045 33.6354 116.649 21.9363C116.253 10.2374 106.549 0.738443 94.8866 0.538086C90.26 0.54304 85.9101 2.26724 82.001 4.61499C75.0268 8.80366 66.8172 11.2103 57.9658 11.2196C49.0194 11.2291 40.5626 8.78841 33.2514 4.53123C29.3471 2.25781 25.045 0.608482 20.5906 0.613577C8.81524 0.697707 -0.386616 10.2721 0.0125079 22.0601C0.41167 33.8481 10.2612 43.4025 22.0415 43.462C26.4958 43.4573 30.6859 41.799 34.436 39.5173C41.4582 35.245 49.7493 32.7865 58.6957 32.7769C67.547 32.7676 75.9191 35.1565 83.1765 39.3301Z"  className="fill-white-10"/>
             </svg>
           </div>
-          <h1 className="text-4xl xl:text-5xl font-bold font-display text-blue-50 w-2/4 xl:w-4/5 2xl:w-2/3">Adquira mais clientes, <br />projetos e receita através de <br />uma plataforma de manufatura</h1>
+          <h1 className="text-4xl xl:text-5xl font-bold font-display text-blue-50 w-3/4 xl:w-4/5 2xl:w-2/3">Adquira mais clientes, <br />projetos e receita através de <br />uma plataforma de manufatura</h1>
           <p className="text-blue-50 leading-7 w-[45%]">Na plataforma da Peerdustry vários projetos são ofertados todos os dias, uma vez homologado você tem acesso ao Mural de Trabalhos, com diversas demandas de peças usinadas spot. </p>
           <a href="https://www.peerdustry.com/comprar-pecas-usinadas/#contact" target="blank"><Button type="submit" className="bg-red-600 hover:bg-red-700 text-white border-red-800 mt-6">Iniciar inscrição ↗</Button></a>
+        </div>
+      </section>
+      {/*Seventh Section */}
+      <section className="bg-blue-50 px-16 xl:px-32 2xl:px-40 py-32 flex gap-8 xl:gap-16">
+        <div className="aspect-square overflow-hidden rounded-3xl border-solid border border-stroke-40">
+          <Image src={Image01} alt="" className="content-cover"/>
+        </div>
+        <div className="flex flex-col gap-8 text-blue-500">
+          <h2 className="text-2xl font-bold  xl:w-3/4 2xl:w-2/3">Ajudamos nossos Parceiros de Manufatura a usinar mais peças</h2>
+          <p className="w-2/3">A Peerdustry cuida das operações comerciais dos seus fornecedores de ponta a ponta.</p>
+          <div className="flex gap-6">
+            <div className="flex flex-col text-white aspect-square gap-2 basis-1/3 bg-blue-500 p-6 rounded-3xl border-solid border-2 border-stroke-40 items-end">
+              <strong className="font-light text-sm">Economize</strong>
+              <h4 className="text-3xl xl:text-4xl 2xl:text-5xl font-display font-bold">+ 60h</h4>
+              <strong className="font-light text-xs xl:text-sm text-right">Abertura de novos clientes</strong>
+            </div>
+            <div className="flex flex-col text-white aspect-square gap-2 basis-1/3 bg-blue-500 p-6 rounded-3xl border-solid border-2 border-stroke-40 items-end">
+              <strong className="font-light text-sm">Economize</strong>
+              <h4 className="text-3xl xl:text-4xl 2xl:text-5xl font-display font-bold">+ 70h</h4>
+              <strong className="font-light text-xs xl:text-sm text-right">Elaboração de orçamentos</strong>
+            </div>
+            <div className="flex flex-col text-white aspect-square gap-2 basis-1/3 bg-blue-500 p-6 rounded-3xl border-solid border-2 border-stroke-40 items-end">
+              <strong  className="font-light text-sm">Economize</strong>
+              <h4 className="text-3xl xl:text-4xl 2xl:text-5xl font-display font-bold">+ 10h</h4>
+              <strong className="font-light text-xs xl:text-sm text-right">Compra de MP + Fretes</strong>
+            </div>
+          </div>
+          <a href="" className="text-red-50 bg-red-700 hover:bg-red-600 px-9 py-3 w-52 font-bold text-sm rounded-lg border-solid border-2 border-red-600 hover:border-red-500">Seja um parceiro →</a>
         </div>
       </section>
       {/*Second section */}
@@ -39,8 +67,8 @@ export default function Partners() {
             <path d="M31.862 26.1538C31.862 29.3826 29.3051 32 26.1509 32C22.9968 32 20.4398 29.3826 20.4398 26.1538C20.4398 22.9251 22.9968 20.3077 26.1509 20.3077C29.3051 20.3077 31.862 22.9251 31.862 26.1538Z" fill="#00437F"/>
           </svg>
           <a href="" className="text-lg text-blue-500 hover:text-slate-500 font-bold">Com a Peerdustry, um leque de oportunidades se abre</a>
-          <p className="w-2/5 text-center text-blue-500">Nossos Parceiros de Manufatura conseguem aumentar suas receitas significativamente sem a necessidade de acompanhamentos, visitas aos clientes e elaboração de cotações.</p>
-          <div className="grid grid-cols-4 gap-4 px-80">
+          <p className="w-3/5 xl:w-2/5 text-center text-blue-500">Nossos Parceiros de Manufatura conseguem aumentar suas receitas significativamente sem a necessidade de acompanhamentos, visitas aos clientes e elaboração de cotações.</p>
+          <div className="grid grid-cols-4 gap-4 px-32 xl:px-56 2xl:px-80">
             <Image src={Img4} alt="" className="rounded-2xl aspect-square object-cover"/>
             <Image src={Img5} alt="" className="rounded-2xl aspect-square object-cover"/>
             <Image src={Img6} alt="" className="rounded-2xl aspect-square object-cover"/>
@@ -50,7 +78,7 @@ export default function Partners() {
       </section>
       {/* Third Section */}
       <section>
-        <div className="grid grid-cols-4 grid-rows-3 gap-4 px-56 py-32 bg-blue-50">
+        <div className="grid grid-cols-4 grid-rows-3 gap-4 px-16 xl:px-32 2xl:px-56 py-16 xl:py-32 bg-blue-50">
           <div className="col-span-2 space-y-4">
             <h3 className="text-blue-500 font-bold text-3xl">Vantagens de ser um <br />fornecedor Peerdustry</h3>
             <p className="text-sm leading-relaxed text-slate-500">Saiba porque seu um <br />parceiro da Peerdustry →</p>
@@ -121,7 +149,7 @@ export default function Partners() {
       </section>
       {/* Fourth Section */}
       <section className="bg-blue-50">
-        <div className="flex items-center justify-center px-40 py-32">
+        <div className="flex items-center justify-center px-16 xl:px-24 2xl:px-40 py-32">
           <p className=" text-blue-500 text-center text-4xl w-2/3 leading-normal font-display" >O maior <b>propósito</b> da Peer é que você <b>fabrique</b> e <b>fature</b> mais utilizando a <b>capacidade produtiva de <u> máquinas ociosas</u></b>.</p>
         </div>
       </section>
@@ -133,9 +161,9 @@ export default function Partners() {
             <circle cx="12.3486" cy="12" r="12" fill="#00437F"/>
             <path d="M78.9074 21.6897C81.1844 22.9977 83.6845 23.9586 86.2742 23.9559C92.7941 23.83 97.8657 18.5057 97.644 11.9644C97.4222 5.42315 91.9901 0.112025 85.4623 0C82.8725 0.00277004 80.4376 0.966823 78.2494 2.27951C74.3456 4.62152 69.7502 5.96714 64.7955 5.97234C59.7877 5.97767 55.0539 4.613 50.9614 2.23268C48.7759 0.96155 46.3678 0.0393607 43.8744 0.0422092C37.283 0.0892487 32.1322 5.4426 32.3556 12.0336C32.5791 18.6246 38.0924 23.9667 44.6865 24C47.1799 23.9974 49.5253 23.0702 51.6245 21.7945C55.5553 19.4057 60.1962 18.031 65.2041 18.0257C70.1587 18.0205 74.845 19.3562 78.9074 21.6897Z" fill="#00437F"/>
           </svg>
-          <p className="w-2/5 text-center text-blue-700"><b>Você é especialista em usinagem?</b> Na Peerdustry trabalhamos com os mais variados tipos de máquinas e processos de usinagem. Cadastre-se na nossa Plataforma e faça parte desse time de parceiros que só cresce!</p>
+          <p className="w-1/2 xl:w-2/5 text-center text-blue-700"><b>Você é especialista em usinagem?</b> Na Peerdustry trabalhamos com os mais variados tipos de máquinas e processos de usinagem. Cadastre-se na nossa Plataforma e faça parte desse time de parceiros que só cresce!</p>
         </div>
-        <div className="grid grid-rows-3 grid-cols-12 grid-flow-row-dense gap-6 px-40">
+        <div className="grid grid-rows-3 grid-cols-12 grid-flow-row-dense gap-6 px-16 xl:px-40">
           <div className="col-span-4 bg-slate-200 h-32 flex flex-col gap-3 justify-center items-center rounded-2xl border-solid border border-slate-300">
             <TrendUp size={40} className="fill-blue-500 bg-slate-100 p-2 rounded-md border-solid border border-slate-300" weight="fill"/>
             <h3 className="text-slate-800 text-sm font-bold font-display">Retífica</h3>
@@ -166,7 +194,7 @@ export default function Partners() {
         </div>
       </section>
       {/* Sixth Section */}
-      <section className="bg-blue-50 flex gap-16 px-40 pt-32 pb-16">
+      <section className="bg-blue-50 flex gap-16 px-16 xl:px-40 pt-32 pb-16">
         <div className="basis-1/2 space-y-8">
           <div className="flex justify-center items-center h-44 rounded-2xl bg-slate-200 border-solid border border-slate-300 overflow-hidden ">
             <Image src={Img12} alt="" className="w-full h-full object-contain"/>
@@ -190,35 +218,9 @@ export default function Partners() {
           </div>
         </div>
       </section>
-      {/*Seventh Section */}
-      <section className="bg-blue-50 px-40 py-32 flex gap-16">
-        <div className="aspect-square overflow-hidden rounded-3xl border-solid border border-stroke-40">
-          <Image src={Image01} alt="" className="content-cover"/>
-        </div>
-        <div className="flex flex-col gap-8">
-          <h2>Ajudamos nossos Parceiros de Manufatura a usinar mais peças</h2>
-          <p>A Peerdustry cuida das operações comerciais dos seus fornecedores de ponta a ponta.</p>
-          <div>
-            <div>
-              <strong>Economize</strong>
-              <h4>+ 60h</h4>
-              <strong>Abertura de novos clientes</strong>
-            </div>
-            <div>
-              <strong>Economize</strong>
-              <h4>+ 70h</h4>
-              <strong>Elaboração de orçamentos</strong>
-            </div>
-            <div>
-              <strong>Economize</strong>
-              <h4>+ 10h</h4>
-              <strong>Compra de MP + Fretes</strong>
-            </div>
-          </div>
-        </div>
-      </section>
+
       {/*Eighth Section */}
-      <section className="flex flex-row gap-6 bg-blue-50 px-40 pt-16 pb-64">
+      <section className="flex flex-row gap-6 bg-blue-50 px-16 xl:px-40 pt-16 pb-64">
         <div className="basis-1/4 flex flex-col gap-3 pt-3">
           <h2 className="font-bold text-xl text-blue-500">Métodos de venda →</h2>
           <strong className="font-normal text-slate-500">Tradicionalmente, o caminho percorrido desde a busca por clientes até a entrega das peças usinadas é bastante atribulado.</strong>

@@ -40,9 +40,9 @@ export default function Buy() {
             <path d="M11.4222 5.84615C11.4222 9.07489 8.86528 11.6923 5.71112 11.6923C2.55696 11.6923 0 9.07489 0 5.84615C0 2.61741 2.55696 0 5.71112 0C8.86528 0 11.4222 2.61741 11.4222 5.84615Z" fill="#00437F"/>
             <path d="M31.862 26.1538C31.862 29.3826 29.3051 32 26.1509 32C22.9968 32 20.4398 29.3826 20.4398 26.1538C20.4398 22.9251 22.9968 20.3077 26.1509 20.3077C29.3051 20.3077 31.862 22.9251 31.862 26.1538Z" fill="#00437F"/>
           </svg>
-          <p className="w-1/3 text-center text-blue-500">A Peer conta com <strong>centenas de Parceiros de Manufatura homologados</strong> em nossa plataforma digital. Portanto, os nossos clientes têm acesso a um grande volume de fornecedores em um só canal. <strong>Economize tempo na busca por novos fornecedores!</strong></p>
+          <p className="w-2/3 2xl:w-1/3 text-center text-blue-500">A Peer conta com <strong>centenas de Parceiros de Manufatura homologados</strong> em nossa plataforma digital. Portanto, os nossos clientes têm acesso a um grande volume de fornecedores em um só canal. <strong>Economize tempo na busca por novos fornecedores!</strong></p>
           <a href="" className="text-xl text-blue-500 hover:text-slate-500 font-bold">Comprar peças usinadas ↗</a>
-          <div className="grid grid-cols-4 gap-4 px-80">
+          <div className="grid grid-cols-4 gap-4 px-32 xl:px-64 2xl:px-80">
             <Image src={Img4} alt="" className="rounded-2xl aspect-square object-cover"/>
             <Image src={Img5} alt="" className="rounded-2xl aspect-square object-cover"/>
             <Image src={Img6} alt="" className="rounded-2xl aspect-square object-cover"/>
@@ -54,17 +54,17 @@ export default function Buy() {
         </div>
       </section>
       {/*Third Section*/}
-      <section className="flex gap-6 bg-blue-50 py-32 px-48">
-        <div className="basis-1/2 flex flex-col gap-8">
+      <section className="flex gap-6 bg-blue-50 py-32 px-16 xl:px-32 2xl:px-48">
+        <div className="basis-2/5 xl:basis-1/2 flex flex-col gap-8">
           <h1 className="text-3xl font-bold text-blue-500">Como a Peer ajuda<br /> seus clientes?</h1>
           <svg width="98" height="24" viewBox="0 0 98 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="12" cy="12" r="12" fill="#003362"/>
             <path d="M78.5588 21.6897C80.8358 22.9977 83.3358 23.9586 85.9256 23.9559C92.4455 23.83 97.517 18.5057 97.2953 11.9644C97.0736 5.42315 91.6415 0.112025 85.1136 0C82.5239 0.00277004 80.0889 0.966823 77.9008 2.27951C73.9969 4.62152 69.4015 5.96714 64.4469 5.97234C59.4391 5.97767 54.7053 4.613 50.6128 2.23268C48.4273 0.96155 46.0191 0.0393607 43.5258 0.0422092C36.9344 0.0892487 31.7836 5.4426 32.007 12.0336C32.2304 18.6246 37.7438 23.9667 44.3379 24C46.8313 23.9974 49.1767 23.0702 51.2758 21.7945C55.2066 19.4057 59.8476 18.031 64.8554 18.0257C69.8101 18.0205 74.4964 19.3562 78.5588 21.6897Z" fill="#003362"/>
           </svg>
-          <p className="text-blue-500 w-3/4">Nosso cadastro detalhado de fornecedores, com informações do <strong>mapeamento da rede de fornecedores, características construtivas e habilidades técnicas</strong>, garantem a produção do seu lote de peças por especialistas.</p>
+          <p className="text-blue-500 xl:w-3/4">Nosso cadastro detalhado de fornecedores, com informações do <strong>mapeamento da rede de fornecedores, características construtivas e habilidades técnicas</strong>, garantem a produção do seu lote de peças por especialistas.</p>
           <a href="" className="text-xl text-blue-500 hover:text-slate-500 font-bold">Fale com a Peer ↗</a>
         </div>
-        <div className="grid grid-cols-2 gap-6 basis-1/2">
+        <div className="grid grid-cols-2 gap-6 basis-3/5 xl:basis-1/2">
           <div className="bg-white rounded-2xl overflow-hidden shadow-3xl border-solid border border-stroke-40">
             <div className="flex bg-black-5 justify-between items-center px-5 py-4">
               <h3 className="text-blue-500 font-bold">Otimização<br /> de tempo</h3>
@@ -96,7 +96,7 @@ export default function Buy() {
         </div>
       </section>
       {/*Fourth Section */}
-      <section className="flex flex-row gap-6 bg-blue-50 px-48 py-16 ">
+      <section className="flex flex-row gap-6 bg-blue-50 px-16 xl:px-32 2xl:px-48 py-16 ">
         <div className="basis-1/4">
           <h2 className="font-bold text-xl text-blue-500">Métodos de compra</h2>
           <strong className="font-normal text-slate-500">Principais diferenças →</strong>
@@ -165,7 +165,7 @@ export default function Buy() {
         </table>
       </section>
       {/*Fifth Section */}
-      <section className="flex flex-col gap-16 px-48 pt-16 pb-32 bg-blue-50">
+      <section className="flex flex-col gap-16 px-16 xl:px-32 2xl:px-48 pt-16 pb-32 bg-blue-50">
         <div className="flex flex-col gap-8 items-center">
           <h2 className="text-4xl font-bold text-blue-500 text-center">Simplifique a compra <br /> de peças usinadas spot</h2>
           <svg width="164" height="16" viewBox="0 0 164 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -188,7 +188,7 @@ export default function Buy() {
               <p>Comprando peças usinadas em nossa plataforma, você deixa de se preocupar com todas as dificuldades e custos da gestão da cadeia de fornecedores. Além disso, é a oportunidade de simplificar o processo de compras utilizando um novo modelo de negócios e estar em alinhamento com as melhores práticas do mercado.</p>
             </div>
           </div>
-          <div className="flex flex-col -mt-8 gap-4">
+          <div className="flex flex-col mt-2 2xl:-mt-8 gap-4">
             <p className="bg-white p-4 rounded-2xl shadow-3xl text-blue-500 w-2/6">Com a Peer, você evita falhas de qualidade e atraso nos pedidos. <strong> Nós resolvemos 100% dos problemas das empresas compradoras!</strong></p>
           </div>
           <div className="flex flex-col gap-2 -mt-40">

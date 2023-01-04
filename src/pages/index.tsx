@@ -71,7 +71,7 @@ export default function Home() {
       </section>
       {/* Client companies slider */}
       <section className="bg-blue-50">
-        <div ref={sliderRef} className="keen-slider flex flex-row px-16 xl:px-40 2xl:px-60 py-8 space-x-4 overflow-y-scroll scrollbar-hide border-solid border-b border-stroke-40">
+        <div ref={sliderRef} className="keen-slider flex flex-row px-16 xl:px-40 2xl:px-60 py-8 space-x-4 overflow-y-scroll scrollbar-hide">
           <a className="keen-slider__slide number-slide1 flex justify-center items-center bg-white rounded-lg shadow-3xl w-40 h-20 text-sm text-slate-600">Empresas que<br/> confiam em nosso<br/> trabalho →</a>
           <a className="keen-slider__slide number-slide2 flex justify-center items-center bg-white rounded-lg shadow-3xl w-40 h-20" href="https://www.nestle.com.br/" target="blank"><Image src={ Nestle } alt="" /></a>
           <a className="keen-slider__slide number-slide3 flex justify-center items-center bg-white rounded-lg shadow-3xl w-40 h-20" href="https://www.scania.com/br/pt/home.html" target="blank"><Image src={ Scania } alt="" /></a>
