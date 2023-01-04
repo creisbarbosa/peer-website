@@ -1,20 +1,17 @@
-import { AppProps } from "next/app"
-import { globalStyles } from "../../styles/globals"
+import '../styles/global.css';
+import type { AppProps } from 'next/app';
 
-import { Container } from "../../styles/pages/app"
-import Navbar from "../components/Navbar"
-import Ribbon from "../components/Ribbon"
-import Footer from "../components/Footer"
-
-globalStyles()
+import Navbar from '../components/Navbar';
+import Ribbon from '../components/Ribbon';
+import Footer from '../components/Footer';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <Container>
-      <Ribbon/>
-      <Navbar/>
+    <>
+      <Ribbon />
+      <Navbar />
       <Component {...pageProps} />
       <Footer />
-    </Container>
-    )
+    </>
+  )
 }
