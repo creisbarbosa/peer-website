@@ -7,13 +7,20 @@ import Img6 from "../../public/img/p_img_6.png";
 import Img7 from "../../public/img/p_img_7.png";
 import Img12 from "../../public/img/p_img_12.png";
 import Img13 from "../../public/img/p_img_13.png";
-import Image01 from "../../public/img/Image01.png";
-import { ChartPieSlice, CurrencyCircleDollar, CurrencyDollar, Cursor, Polygon, Tag, ClockClockwise, TrendUp, PresentationChart } from "phosphor-react";
+import Image01 from "../../public/img/exemple.png";
+
+import Cnc from "../../src/assets/process/cnc.svg"
+import Eletroesrosao from "../../src/assets/process/eletroesrosao.svg"
+import Fresamento from "../../src/assets/process/fresamento.svg"
+import Mandrilhadora from "../../src/assets/process/mandrilhadora.svg"
+import Torneamento from "../../src/assets/process/torneamento.svg"
+
+import { ChartPieSlice, CurrencyCircleDollar, CurrencyDollar, Cursor, Tag, ClockClockwise, TrendUp, PresentationChart, ArrowClockwise } from "phosphor-react";
 
 export default function Partners() {
   return (
     <>
-     {/* Hero Section */}
+      {/* Hero Section */}
       <section className='bg-gradient-to-r from-blue-700  to-blue-500 h-full w-full relative'>
         <div className="px-16 xl:px-40 2xl:px-60 py-16 space-y-12 border-solid border-b border-stroke-40 relative">
           <div className="flex space-x-4">
@@ -29,32 +36,32 @@ export default function Partners() {
           <a href="https://www.peerdustry.com/comprar-pecas-usinadas/#contact" target="blank"><Button type="submit" className="bg-red-600 hover:bg-red-700 text-white border-red-800 mt-6">Iniciar inscrição ↗</Button></a>
         </div>
       </section>
-      {/*Seventh Section */}
+      {/*First Section */}
       <section className="bg-blue-50 px-16 xl:px-32 2xl:px-40 py-32 flex gap-8 xl:gap-16">
-        <div className="aspect-square overflow-hidden rounded-3xl border-solid border border-stroke-40">
-          <Image src={Image01} alt="" className="content-cover"/>
+        <div className="basis-2/5 aspect-square overflow-hidden rounded-3xl border-solid border border-stroke-40">
+          <Image src={Image01} alt="" className="object-cover h-full w-full"/>
         </div>
-        <div className="flex flex-col gap-8 text-blue-500">
-          <h2 className="text-2xl font-bold  xl:w-3/4 2xl:w-2/3">Ajudamos nossos Parceiros de Manufatura a usinar mais peças</h2>
+        <div className="basis-3/5 flex flex-col gap-8 text-blue-500">
+          <h2 className="text-3xl font-bold  xl:w-3/4 2xl:w-2/3">Ajudamos nossos Parceiros de Manufatura a usinar mais peças</h2>
           <p className="w-2/3">A Peerdustry cuida das operações comerciais dos seus fornecedores de ponta a ponta.</p>
           <div className="flex gap-6">
-            <div className="flex flex-col text-white aspect-square gap-2 basis-1/3 bg-blue-500 p-6 rounded-3xl border-solid border-2 border-stroke-40 items-end">
+            <div className="flex flex-col text-white aspect-square gap-6 basis-1/3 bg-blue-500 p-6 rounded-3xl border-solid border-2 border-stroke-40 items-end">
               <strong className="font-light text-sm">Economize</strong>
-              <h4 className="text-3xl xl:text-4xl 2xl:text-5xl font-display font-bold">+ 60h</h4>
+              <h4 className="text-3xl xl:text-6xl font-display font-bold">+ 60h</h4>
               <strong className="font-light text-xs xl:text-sm text-right">Abertura de novos clientes</strong>
             </div>
-            <div className="flex flex-col text-white aspect-square gap-2 basis-1/3 bg-blue-500 p-6 rounded-3xl border-solid border-2 border-stroke-40 items-end">
+            <div className="flex flex-col text-white aspect-square gap-6 basis-1/3 bg-blue-500 p-6 rounded-3xl border-solid border-2 border-stroke-40 items-end">
               <strong className="font-light text-sm">Economize</strong>
-              <h4 className="text-3xl xl:text-4xl 2xl:text-5xl font-display font-bold">+ 70h</h4>
+              <h4 className="text-3xl xl:text-6xl font-display font-bold">+ 70h</h4>
               <strong className="font-light text-xs xl:text-sm text-right">Elaboração de orçamentos</strong>
             </div>
-            <div className="flex flex-col text-white aspect-square gap-2 basis-1/3 bg-blue-500 p-6 rounded-3xl border-solid border-2 border-stroke-40 items-end">
+            <div className="flex flex-col text-white aspect-square gap-6 basis-1/3 bg-blue-500 p-6 rounded-3xl border-solid border-2 border-stroke-40 items-end">
               <strong  className="font-light text-sm">Economize</strong>
-              <h4 className="text-3xl xl:text-4xl 2xl:text-5xl font-display font-bold">+ 10h</h4>
+              <h4 className="text-3xl xl:text-6xl font-display font-bold">+ 10h</h4>
               <strong className="font-light text-xs xl:text-sm text-right">Compra de MP + Fretes</strong>
             </div>
           </div>
-          <a href="" className="text-red-50 bg-red-700 hover:bg-red-600 px-9 py-3 w-52 font-bold text-sm rounded-lg border-solid border-2 border-red-600 hover:border-red-500">Seja um parceiro →</a>
+          <a href="https://usinagem.peerdustry.com/signup" target="blank" className="text-red-50 bg-red-700 hover:bg-red-600 px-9 py-3 w-52 font-bold text-sm rounded-lg border-solid border-2 border-red-600 hover:border-red-500">Seja um parceiro →</a>
         </div>
       </section>
       {/*Second section */}
@@ -164,32 +171,33 @@ export default function Partners() {
           <p className="w-1/2 xl:w-2/5 text-center text-blue-700"><b>Você é especialista em usinagem?</b> Na Peerdustry trabalhamos com os mais variados tipos de máquinas e processos de usinagem. Cadastre-se na nossa Plataforma e faça parte desse time de parceiros que só cresce!</p>
         </div>
         <div className="grid grid-rows-3 grid-cols-12 grid-flow-row-dense gap-6 px-16 xl:px-40">
-          <div className="col-span-4 bg-slate-200 h-32 flex flex-col gap-3 justify-center items-center rounded-2xl border-solid border border-slate-300">
-            <TrendUp size={40} className="fill-blue-500 bg-slate-100 p-2 rounded-md border-solid border border-slate-300" weight="fill"/>
-            <h3 className="text-slate-800 text-sm font-bold font-display">Retífica</h3>
+          <div className="group col-span-4 h-32 flex gap-3 justify-center items-center rounded-2xl bg-slate-200 hover:bg-slate-300 duration-300 border-solid border border-slate-300 hover:border-slate-400">
+            <h3 className="text-slate-400 group-hover:text-slate-700 duration-300 font-bold font-display">Retífica</h3>
+            <ArrowClockwise size={24} className="fill-slate-400 group-hover:fill-slate-700 duration-300 rounded-md" weight="fill"/>
           </div>
-          <div className="col-span-5 row-span-2 bg-gradient-to-r from-blue-700  to-blue-500 flex justify-center items-center rounded-2xl border-solid border border-slate-300">
-            <h3 className="text-white font-bold font-display">Torneamento</h3>
+          <div className="group  col-span-5 row-span-2 flex flex-col gap-2 justify-center items-center rounded-2xl bg-slate-200 hover:bg-slate-300 duration-300 border-solid border border-slate-300 hover:border-slate-400">
+            <Image src={Cnc} alt="" className=""/>
+            <h3 className="text-slate-400 group-hover:text-slate-700 duration-300 font-bold font-display">CNC</h3>
           </div>
           <div className="flex flex-col gap-6 col-span-3 row-span-2 ">
-            <div className="basis-1/2 bg-slate-200 flex flex-col gap-3 justify-center items-center rounded-2xl border-solid border border-slate-300">
-              <h3 className="text-slate-800 text-sm font-bold font-display">Vem para a Peer ↗</h3>
+            <div className="basis-1/2 flex flex-col gap-3 justify-center items-center rounded-2xl bg-slate-200 hover:bg-slate-300 duration-300 border-solid border border-slate-300 hover:border-slate-400 cursor-pointer">
+              <a href="https://usinagem.peerdustry.com/signup" target="blank" className="text-slate-800 font-bold font-display">Vem para a Peer ↗</a>
             </div>
-            <div className="basis-1/2 bg-slate-200 flex flex-col gap-3 justify-center items-center rounded-2xl border-solid border border-slate-300">
-              <Polygon size={40} className="fill-blue-500 bg-slate-100 p-2 rounded-md border-solid border border-slate-300" weight="fill"/>
-              <h3 className="text-slate-800 text-sm font-bold font-display">CNC</h3>
+            <div className="basis-1/2 flex justify-center items-center rounded-2xl bg-slate-200 hover:bg-slate-300 duration-300 border-solid border border-slate-300 hover:border-slate-400">
+              <Image src={Mandrilhadora} alt="" className=""/>
             </div>
           </div>
-          <div className="col-span-4 row-span-2 bg-gradient-to-r from-blue-700  to-blue-500 flex justify-center items-center rounded-2xl border-solid border border-slate-300">
-            <h3 className="text-white font-bold font-display">Fresamento</h3>
+          <div className="group col-span-4 row-span-2 flex flex-col gap-8 justify-center items-center rounded-2xl bg-slate-200 hover:bg-slate-300 duration-300 border-solid border border-slate-300 hover:border-slate-400">
+            <Image src={Torneamento} alt="" className=""/>
+            <h3 className="text-slate-400 group-hover:text-slate-700 duration-300 font-bold font-display">Torneamento</h3>
           </div>
-          <div className="col-span-4 bg-slate-200 flex flex-col gap-3 justify-center items-center rounded-2xl border-solid border border-slate-300">
-            <TrendUp size={40} className="fill-blue-500 bg-slate-100 p-2 rounded-md border-solid border border-slate-300" weight="fill"/>
-            <h3 className="text-slate-800 text-sm font-bold font-display">Mandrilhadora</h3>
+          <div className="group col-span-4 flex gap-8 justify-center items-center rounded-2xl bg-slate-200 hover:bg-slate-300 duration-300 border-solid border border-slate-300 hover:border-slate-400">
+            <Image src={Eletroesrosao} alt="" className=""/>
+            <h3 className="text-slate-400 group-hover:text-slate-700 duration-300 font-bold font-display">Eletroesrosão</h3>
           </div>
-          <div className="col-span-4 bg-slate-200 flex flex-col gap-3 justify-center items-center rounded-2xl border-solid border border-slate-300">
-            <TrendUp size={40} className="fill-blue-500 bg-slate-100 p-2 rounded-md border-solid border border-slate-300" weight="fill"/>
-            <h3 className="text-slate-800 text-sm font-bold font-display">Eletroerosão</h3>
+          <div className="group col-span-4 flex gap-8 justify-center items-center rounded-2xl bg-slate-200 hover:bg-slate-300 duration-300 border-solid border border-slate-300 hover:border-slate-400">
+            <Image src={Fresamento} alt="" className=""/>
+            <h3 className="text-slate-400 group-hover:text-slate-700 duration-300 font-bold font-display">Fresamento</h3>
           </div>
         </div>
       </section>
@@ -218,8 +226,7 @@ export default function Partners() {
           </div>
         </div>
       </section>
-
-      {/*Eighth Section */}
+      {/*Seventh Section */}
       <section className="flex flex-row gap-6 bg-blue-50 px-16 xl:px-40 pt-16 pb-64">
         <div className="basis-1/4 flex flex-col gap-3 pt-3">
           <h2 className="font-bold text-xl text-blue-500">Métodos de venda →</h2>

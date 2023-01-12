@@ -41,7 +41,7 @@ export default function Buy() {
             <path d="M31.862 26.1538C31.862 29.3826 29.3051 32 26.1509 32C22.9968 32 20.4398 29.3826 20.4398 26.1538C20.4398 22.9251 22.9968 20.3077 26.1509 20.3077C29.3051 20.3077 31.862 22.9251 31.862 26.1538Z" fill="#00437F"/>
           </svg>
           <p className="w-2/3 2xl:w-1/3 text-center text-blue-500">A Peer conta com <strong>centenas de Parceiros de Manufatura homologados</strong> em nossa plataforma digital. Portanto, os nossos clientes têm acesso a um grande volume de fornecedores em um só canal. <strong>Economize tempo na busca por novos fornecedores!</strong></p>
-          <a href="" className="text-xl text-blue-500 hover:text-slate-500 font-bold">Comprar peças usinadas ↗</a>
+          <a href="https://www.peerdustry.com/comprar-pecas-usinadas/#contact" target="blank" className="text-xl text-blue-500 hover:text-slate-500 font-bold">Comprar peças usinadas ↗</a>
           <div className="grid grid-cols-4 gap-4 px-32 xl:px-64 2xl:px-80">
             <Image src={Img4} alt="" className="rounded-2xl aspect-square object-cover"/>
             <Image src={Img5} alt="" className="rounded-2xl aspect-square object-cover"/>
@@ -62,7 +62,7 @@ export default function Buy() {
             <path d="M78.5588 21.6897C80.8358 22.9977 83.3358 23.9586 85.9256 23.9559C92.4455 23.83 97.517 18.5057 97.2953 11.9644C97.0736 5.42315 91.6415 0.112025 85.1136 0C82.5239 0.00277004 80.0889 0.966823 77.9008 2.27951C73.9969 4.62152 69.4015 5.96714 64.4469 5.97234C59.4391 5.97767 54.7053 4.613 50.6128 2.23268C48.4273 0.96155 46.0191 0.0393607 43.5258 0.0422092C36.9344 0.0892487 31.7836 5.4426 32.007 12.0336C32.2304 18.6246 37.7438 23.9667 44.3379 24C46.8313 23.9974 49.1767 23.0702 51.2758 21.7945C55.2066 19.4057 59.8476 18.031 64.8554 18.0257C69.8101 18.0205 74.4964 19.3562 78.5588 21.6897Z" fill="#003362"/>
           </svg>
           <p className="text-blue-500 xl:w-3/4">Nosso cadastro detalhado de fornecedores, com informações do <strong>mapeamento da rede de fornecedores, características construtivas e habilidades técnicas</strong>, garantem a produção do seu lote de peças por especialistas.</p>
-          <a href="" className="text-xl text-blue-500 hover:text-slate-500 font-bold">Fale com a Peer ↗</a>
+          <a href="https://api.whatsapp.com/send/?phone=5511960840395&text&type=phone_number&app_absent=0" target="blank" className="text-xl text-blue-500 hover:text-slate-500 font-bold">Fale com a Peer ↗</a>
         </div>
         <div className="grid grid-cols-2 gap-6 basis-3/5 xl:basis-1/2">
           <div className="bg-white rounded-2xl overflow-hidden shadow-3xl border-solid border border-stroke-40">
