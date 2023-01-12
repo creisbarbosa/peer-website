@@ -222,7 +222,7 @@ export default function Partners() {
               <h3 className="text-xl font-bold text-blue-500">Seja um parceiro engajado</h3>
               <p className="text-slate-600">Após o término deste período, o sistema da Plataforma da Peer <b>elege o melhor fornecedor para a peça</b>, baseado na <b>reputação</b> da plataforma</p>
             </div>
-            <a href="" className="text-blue-500 font-bold text-xl">Cadastre-se↗</a>
+            <a href="https://usinagem.peerdustry.com/signup" target="blank" className="text-blue-500 hover:text-blue-100 font-bold text-xl">Cadastre-se↗</a>
           </div>
         </div>
       </section>
