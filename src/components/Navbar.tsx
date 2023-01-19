@@ -13,6 +13,7 @@ export default function Navbar() {
           ['Compre', '/buy'],
           ['Seja Parceiro', '/partners'],
           ['Sobre nós', '/about'],
+          ['Contato', '/contact'],
         ].map(([title, url]) => (
           <Link href={url} className="px-4 xl:px-6 py-6 text-blue-500 text-xs xl:text-base transition duration-300 hover:text-slate-500 font-medium" key="">{title}</Link>
         ))}

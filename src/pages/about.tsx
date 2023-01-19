@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Background from "../../public/img/Section_bg.png"
 import Img1 from "../../public/img/p_img_1.png";
 import Img2 from "../../public/img/p_img_2.png";
 import Img3 from "../../public/img/p_img_3.png";
@@ -7,8 +8,9 @@ export default function About() {
   return(
     <>
       {/* Hero Section */}
-      <section className='bg-gradient-to-r from-blue-700  to-blue-500 h-full w-full relative'>
-        <div className="px-16 xl:px-40 2xl:px-60 py-16 space-y-12 border-solid border-b border-stroke-40 relative">
+      <section className='w-full relative h-[88vh] border-solid border-b border-stroke-40'>
+      <Image src={Background} alt="" className="h-full w-full object-cover absolute"/>
+        <div className="px-16 xl:px-40 2xl:px-60 py-32 space-y-12 relative">
           <div className="flex space-x-4">
             <svg width="43" height="44" viewBox="0 0 43 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="21.5" cy="22" r="21.5" className="fill-white-10"/>
@@ -19,7 +21,7 @@ export default function About() {
           </div>
           <div className="flex flex-col gap-4">
             <h1 className="text-4xl xl:text-5xl font-bold font-display text-blue-50 w-2/4 xl:w-4/5 2xl:w-2/3">Sobre a Peerdustry</h1>
-            <p className="text-blue-50 text-2xl w-2/5">Quem somos e o que fazemos</p>
+            <p className="text-blue-50 text-base w-2/5">Quem somos e o que fazemos</p>
           </div>
         </div>
       </section>

@@ -9,6 +9,7 @@ import Img9 from "../../public/img/p_img_9.png";``
 import Img10 from "../../public/img/p_img_10.png";
 import Img11 from "../../public/img/p_img_11.png";
 import Image from "next/image";
+import Background from "../../public/img/Section_bg.png"
 
 import { CheckSquare, Timer, ToggleRight, Vault } from "phosphor-react";
 
@@ -16,8 +17,9 @@ export default function Buy() {
   return (
     <>
       {/* Hero Section */}
-      <section className='bg-gradient-to-r from-blue-700  to-blue-500 h-full w-full relative'>
-        <div className="px-16 xl:px-40 2xl:px-60 py-16 space-y-12 border-solid border-b border-stroke-40 relative">
+      <section className='bg-gradient-to-r relative h-[88vh] border-solid border-b border-stroke-40'>
+        <Image src={Background} alt="" className="h-full w-full object-cover absolute"/>
+        <div className="px-32 py-28 space-y-12  relative">
           <div className="flex space-x-4">
             <svg width="43" height="44" viewBox="0 0 43 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="21.5" cy="22" r="21.5" className="fill-white-10"/>

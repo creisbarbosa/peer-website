@@ -30,12 +30,12 @@ import Bg02 from "../../public/img/connected_bg_2.png";
 
 import CadImg from "../../public/img/CADSection_bg.png";
 
-import HeroBackground from "../../public/img/SectionImage01.png"
-
 import CNCLatheImg from "../assets/machines/CNCLathe.svg";
 import ConvencionalLatheImg from "../assets/machines/ConvencionalLathe.svg";
 import MillingCutterImg from "../assets/machines/MillingCutter.svg";
 import MachiningCenterImg from "../assets/machines/MachiningCenter.svg";
+
+import IndexHero from "./sections/IndexHero";
 
 
 export default function Home() {
@@ -47,24 +47,7 @@ export default function Home() {
 
   return (
     <>
-      {/* Hero Section */}
-      <section className='bg-white-30 h-full w-full relative'>
-        <Image src={HeroBackground} alt="" className="w-full h-full object-cover absolute mix-blend-overlay"/>
-        <div className="px-16 xl:px-32 2xl:px-60 py-16 space-y-8 border-solid border-b border-stroke-40 relative">
-          <div className="flex space-x-4">
-            <svg width="43" height="44" viewBox="0 0 43 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="21.5" cy="22" r="21.5" className="fill-blue-600"/>
-            </svg>
-            <svg width="117" height="44" viewBox="0 0 117 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M83.1765 39.3301C87.2443 41.6694 91.7106 43.388 96.3372 43.383C107.985 43.1579 117.045 33.6354 116.649 21.9363C116.253 10.2374 106.549 0.738443 94.8866 0.538086C90.26 0.54304 85.9101 2.26724 82.001 4.61499C75.0268 8.80366 66.8172 11.2103 57.9658 11.2196C49.0194 11.2291 40.5626 8.78841 33.2514 4.53123C29.3471 2.25781 25.045 0.608482 20.5906 0.613577C8.81524 0.697707 -0.386616 10.2721 0.0125079 22.0601C0.41167 33.8481 10.2612 43.4025 22.0415 43.462C26.4958 43.4573 30.6859 41.799 34.436 39.5173C41.4582 35.245 49.7493 32.7865 58.6957 32.7769C67.547 32.7676 75.9191 35.1565 83.1765 39.3301Z"  className="fill-blue-600"/>
-            </svg>
-          </div>
-          <h1 className="text-4xl xl:text-5xl 2xl:text-7xl font-bold font-display text-blue-600 w-2/4 xl:w-2/3 2xl:w-2/3">Compre peças usinadas em menos de 24h, sem se preocupar com cotação</h1>
-          <p className="text-blue-600 w-1/2">Através de uma plataforma digital com <strong>centenas de fornecedores de usinagem</strong> , a Peerdustry possibilita comprar peças usinadas spot em poucos cliques, além de garantir o prazo de entrega acordado e qualidade das peças adquiridas.</p>
-          <a href="https://www.peerdustry.com/comprar-pecas-usinadas/#contact" target="blank"><Button type="submit" className="bg-blue-500 hover:bg-blue-400 text-white border-blue-400 mt-6">Comprar peças usinadas</Button></a>
-        </div>
-      </section>
-      {/* Client companies slider */}
+      <IndexHero />
       <section className="bg-blue-50">
         <div ref={sliderRef} className="keen-slider flex flex-row px-16 xl:px-32 2xl:px-60 py-8 space-x-4 overflow-y-scroll scrollbar-hide">
           <a className="keen-slider__slide number-slide1 flex justify-center items-center bg-white rounded-lg shadow-3xl w-40 h-20 text-sm text-slate-600">Empresas que<br/> confiam em nosso<br/> trabalho →</a>
@@ -84,7 +67,7 @@ export default function Home() {
         <div className="flex flex-col gap-4">
           <h2 className="text-5xl font-bold font-display">Usinagem Conectada</h2>
           <hr className="w-32 border-solid border-2 rounded border-red-700"/>
-          <p className="w-2/3">A Peerdustry facilita a compra e venda de peças usinadas sob demanda. Do pedido até a entrega, gerenciamos todos os processos de ponta a ponta, gerando eficiência para toda a cadeia de usinagem. Compradores reduzem seu lead time e fornecedores ganham novos pedidos, praticamente sem esforço. <strong> E o melhor, você não paga mais nada por isso!</strong></p>
+          <p className="w-2/3">A Peerdustry facilita a compra e venda de peças usinadas sob demanda. Do pedido até a entrega, gerenciamos todos os processos de ponta a ponta, gerando eficiência para toda a cadeia de usinagem. Compradores reduzem seu tempo de espera e fornecedores ganham novos pedidos, praticamente sem esforço. <strong> E o melhor, você não paga mais nada por isso!</strong></p>
           <div className="flex gap-2">
             <svg width="43" height="44" viewBox="0 0 43 44" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="21.5" cy="22" r="21.5" className="fill-slate-200"/>

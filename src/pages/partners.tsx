@@ -8,6 +8,7 @@ import Img7 from "../../public/img/p_img_7.png";
 import Img12 from "../../public/img/p_img_12.png";
 import Img13 from "../../public/img/p_img_13.png";
 import Image01 from "../../public/img/exemple.png";
+import Background from "../../public/img/Section_bg.png"
 
 import Cnc from "../../src/assets/process/cnc.svg"
 import Eletroesrosao from "../../src/assets/process/eletroesrosao.svg"
@@ -18,11 +19,15 @@ import Torneamento from "../../src/assets/process/torneamento.svg"
 import { ChartPieSlice, CurrencyCircleDollar, CurrencyDollar, Cursor, Tag, ClockClockwise, TrendUp, PresentationChart, ArrowClockwise } from "phosphor-react";
 
 export default function Partners() {
+
   return (
     <>
       {/* Hero Section */}
-      <section className='bg-gradient-to-r from-blue-700  to-blue-500 h-full w-full relative'>
-        <div className="px-16 xl:px-40 2xl:px-60 py-16 space-y-12 border-solid border-b border-stroke-40 relative">
+      <section 
+        className='bg-gradient-to-r relative border-solid border-b border-stroke-40 h-[88vh]'
+      >
+        <Image src={Background} alt="" className="h-full w-full object-cover absolute"/>
+        <div className="px-16 xl:px-40 2xl:px-60 py-32  space-y-12  relative">
           <div className="flex space-x-4">
             <svg width="43" height="44" viewBox="0 0 43 44" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="21.5" cy="22" r="21.5" className="fill-white-10"/>
