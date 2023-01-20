@@ -92,10 +92,16 @@ module.exports = {
         'sans' : ['Inter'],
         'display': ['Space Grotesk']
       },
+
       boxShadow: {
         '3xl': '4px 4px 16px rgba(0, 67, 127, 0.15)',
         'nav': '0px 8px 16px rgba(8, 71, 128, 0.10)',
       },
+
+      animation: {
+        'bounce-slow': 'bounce 2s infinite',
+        'spin-slow': 'spin 4s infinite',
+      }
     },
   },
 

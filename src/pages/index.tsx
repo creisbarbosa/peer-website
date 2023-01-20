@@ -1,26 +1,6 @@
 import Image from "next/image";
 
-import { useKeenSlider } from "keen-slider/react";
-
 import { Button } from "../components/Button";
-
-import Nestle from "../assets/companies/nestle_logo.svg";
-import Scania from "../assets/companies/scania_logo.svg";
-import Votorantim from "../assets/companies/votorantim_logo.svg";
-import Eaton from "../assets/companies/eaton_logo.svg";
-import Weg from "../assets/companies/weg_logo.svg";
-import Voith from "../assets/companies/voith_logo.svg";
-import Maxion from "../assets/companies/maxion_logo.svg";
-import Gobain from "../assets/companies/gobain_logo.svg";
-
-import Endeavor from "../assets/companies/endeavor.svg";
-import Abdi from "../assets/companies/abdi.svg";
-import Liga from "../assets/companies/liga_ventures.svg";
-import Grob from "../assets/companies/grob.svg";
-import Abimaq from "../assets/companies/abimaq.svg";
-import Fiemg from "../assets/companies/fiemg.svg";
-import Ahk from "../assets/companies/ahk.svg";
-import Hundred from "../assets/companies/100.svg";
 
 import Img01 from "../../public/img/Image02.png";
 import Img02 from "../../public/img/Machining01.png";
@@ -36,32 +16,16 @@ import MillingCutterImg from "../assets/machines/MillingCutter.svg";
 import MachiningCenterImg from "../assets/machines/MachiningCenter.svg";
 
 import IndexHero from "./sections/IndexHero";
+import Link from "next/link";
+import Slider from "../components/Slider";
 
 
 export default function Home() {
-  const [sliderRef] = useKeenSlider({
-    slides: {
-      perView: 9,
-    },
-  })
 
   return (
     <>
       <IndexHero />
-      <section className="bg-blue-50">
-        <div ref={sliderRef} className="keen-slider flex flex-row px-16 xl:px-32 2xl:px-60 py-8 space-x-4 overflow-y-scroll scrollbar-hide">
-          <a className="keen-slider__slide number-slide1 flex justify-center items-center bg-white rounded-lg shadow-3xl w-40 h-20 text-sm text-slate-600">Empresas que<br/> confiam em nosso<br/> trabalho →</a>
-          <a className="keen-slider__slide number-slide2 flex justify-center items-center bg-white rounded-lg shadow-3xl w-40 h-20" href="https://www.nestle.com.br/" target="blank"><Image src={ Nestle } alt="" /></a>
-          <a className="keen-slider__slide number-slide3 flex justify-center items-center bg-white rounded-lg shadow-3xl w-40 h-20" href="https://www.scania.com/br/pt/home.html" target="blank"><Image src={ Scania } alt="" /></a>
-          <a className="keen-slider__slide number-slide4 flex justify-center items-center bg-white rounded-lg shadow-3xl w-40 h-20" href="https://www.votorantimcimentos.com.br/" target="blank"><Image src={ Votorantim } alt="" /></a>
-          <a className="keen-slider__slide number-slide5 flex justify-center items-center bg-white rounded-lg shadow-3xl w-40 h-20" href="https://www.eaton.com/br/" target="blank"><Image src={ Eaton } alt="" /></a>
-          <a className="keen-slider__slide number-slide6 flex justify-center items-center bg-white rounded-lg shadow-3xl w-40 h-20" href="https://www.weg.net/institutional/BR/pt/" target="blank"><Image src={ Weg } alt="" /></a>
-          <a className="keen-slider__slide number-slide7 flex justify-center items-center bg-white rounded-lg shadow-3xl w-40 h-20" href="https://voith.com/corp-en/about-us/markets-locations/brazil-pt.html" target="blank"><Image src={ Voith } alt="" /></a>
-          <a className="keen-slider__slide number-slide8 flex justify-center items-center bg-white rounded-lg shadow-3xl w-40 h-20" href="https://www.maxionwheels.com/" target="blank"><Image src={ Maxion } alt="" /></a>
-          <a className="keen-slider__slide number-slide9 flex justify-center items-center bg-white rounded-lg shadow-3xl w-40 h-20" href="https://www.saint-gobain.com.br/" target="blank"><Image src={ Gobain } alt="" /></a>
-        </div>
-      </section>
-
+      <Slider />
       {/* Connected machining section */}
       <section className="px-16 xl:px-32 2xl:px-60 pt-32 pb-16 space-y-8 text-blue-600 bg-blue-50">
         <div className="flex flex-col gap-4">
@@ -148,7 +112,7 @@ export default function Home() {
                   <h2 className="text-6xl 2xl:text-8xl font-display font-bold">+36.000</h2>
                   <strong>Peças usinadas</strong>
                 </div>
-                  <p>Por meio da tecnologia de análise de dados conseguimos entregar os pedidos certos para os parceiros de manufatura ideais, otimizando a produção de peças usinadas.</p>
+                  <p>Conseguimos entregar os pedidos certos para os parceiros de manufatura ideais, otimizando a produção de peças usinadas.</p>
               </article>
               <article className="space-y-6 bg-white p-8 rounded-3xl shadow-3xl basis-1/2">
                 <div className="flex gap-2">
@@ -169,7 +133,7 @@ export default function Home() {
                   <h2 className="text-6xl 2xl:text-8xl font-display font-bold">+350.000 hr</h2>
                   <strong>Capacidade de usinagem / mês</strong>
                 </div>
-                  <p>O registro de cada uma das máquinas dos nossos parceiros de usinagem nos possibilita dimensionar nossa capacidade produtiva em horas.</p>
+                  <p>O repositório de máquinas de usinagem dos nossos parceiros nos permite dimensionar nossa capacidade produtiva em horas.</p>
               </article>
             </div>
             <div className="flex gap-6">
@@ -216,7 +180,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-base 2xl:text-xl font-bold font-display">Quem consome peças usinadas</h3>
-              <p className="text-sm 2xl:text-base">O processo de compra de peças usinadas costuma ser cansativo, isso porque ele gera uma grande perda de tempo e ineficiência para quem compra: muito tempo de cotação, grande variação de preços, filas de fabricação entre outros. Nesse cenário, a plataforma da Peerdustry serve como intermediadora, eliminando várias etapas do processo e garantindo a qualidade e o prazo das peças usinadas. 
+              <p className="text-sm 2xl:text-base">O processo de compra de peças usinadas costuma ser cansativo, isso porque ele gera uma grande perda de tempo e ineficiência para quem compra: muito tempo de cotação, grande variação de preços, filas de fabricação entre outros. Nesse cenário, a plataforma da Peerdustry serve como uma intermediadora, eliminando o processo de cotação entre outras etapas, o que gera tempo e reduz custos para quem compra. 
               </p>
             </article>
             <article className="basis-1/3 flex flex-col gap-6 p-8 rounded-3xl bg-white shadow-3xl">
@@ -226,7 +190,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-base 2xl:text-xl font-bold font-display">Peerdustry</h3>
-              <p className="text-sm 2xl:text-base">Unindo compradores e fornecedores de peças usinadas está a Peerdustry, uma plataforma digital de usinagem que integra as demandas das duas pontas. Unimos empresas com capacidade produtiva ociosa com outras que apresentam demanda por fabricação e reduzimos os principais custos envolvidos no processo de compra e venda de peças usinadas, levando dinamismo e eficiência para toda a cadeira produtiva.
+              <p className="text-sm 2xl:text-base">Unindo compradores e fornecedores de peças usinadas está a Peerdustry, uma plataforma digital de usinagem que integra as demandas das duas pontas. Unimos empresas com capacidade produtiva ociosa com outras que apresentam demanda por fabricação e reduzimos os principais custos envolvidos no processo de compra e venda de peças usinadas, levando dinamismo e eficiência para toda a cadeia  produtiva, garantindo a qualidade e prazo das peças adquiridas.
               </p>
             </article>
             <article className="basis-1/3 flex flex-col gap-6 p-8 rounded-3xl bg-white shadow-3xl">
@@ -239,28 +203,16 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-base 2xl:text-xl font-bold font-display">Parceiros de manufatura</h3>
-              <p className="text-sm 2xl:text-base">Quem fornece peças usinadas costuma se deparar com grandes oscilações de mercado, ou seja, momentos de alta e baixa demanda, gerando momentos de ociosidade produtiva e instabilidade financeira. Com a plataforma da Peerdustry, as empresas podem alcançar novos mercados utilizando a capacidade produtiva em momentos de ociosidade, além de eliminar 100% o custo relacionado à aquisição de novos clientes.
+              <p className="text-sm 2xl:text-base">Quem fornece peças usinadas costuma se deparar com grandes oscilações de mercado, ou seja, momentos de alta e baixa demanda, gerando momentos de ociosidade produtiva e instabilidade financeira. Com a plataforma da Peerdustry, as empresas podem alcançar novos mercados utilizando a capacidade produtiva em momentos de ociosidade,  além de eliminar 100% do custo relacionado à aquisição de novos clientes e ao tempo gasto com cotações.
               </p>
             </article>
           </div> 
         </div>
       </section>
       {/* Allied companies slider */}
-      <section className="bg-blue-50">
-        <div ref={sliderRef} className="keen-slider flex flex-row px-16 xl:px-32 2xl:px-60 py-8 space-x-4 overflow-y-scroll scrollbar-hide">
-          <a className="keen-slider__slide number-slide1 flex justify-center items-center bg-white rounded-lg shadow-3xl w-40 h-20 text-sm text-slate-600">Empresas que<br/> confiam em nosso<br/> trabalho →</a>
-          <a className="keen-slider__slide number-slide2 flex justify-center items-center bg-white rounded-lg shadow-3xl w-40 h-20" href="https://endeavor.org.br/scaleup/" target="blank"><Image src={ Endeavor } alt="" /></a>
-          <a className="keen-slider__slide number-slide3 flex justify-center items-center bg-white rounded-lg shadow-3xl w-40 h-20" href="https://www.startupindustria.com.br/" target="blank"><Image src={ Abdi } alt="" /></a>
-          <a className="keen-slider__slide number-slide4 flex justify-center items-center bg-white rounded-lg shadow-3xl w-40 h-20" href="https://liga.ventures/" target="blank"><Image src={ Liga } alt="" /></a>
-          <a className="keen-slider__slide number-slide5 flex justify-center items-center bg-white rounded-lg shadow-3xl w-40 h-20" href="https://www.grobgroup.com/pt/" target="blank"><Image src={ Grob } alt="" /></a>
-          <a className="keen-slider__slide number-slide6 flex justify-center items-center bg-white rounded-lg shadow-3xl w-40 h-20" href="https://www.abimaq.org." target="blank"><Image src={ Abimaq } alt="" /></a>
-          <a className="keen-slider__slide number-slide7 flex justify-center items-center bg-white rounded-lg shadow-3xl w-40 h-20" href="https://fiemglab.com.br/aceleracaofiemglab40/" target="blank"><Image src={ Fiemg } alt="" /></a>
-          <a className="keen-slider__slide number-slide8 flex justify-center items-center bg-white rounded-lg shadow-3xl w-40 h-20" href="https://startupsconnected.com.br/" target="blank"><Image src={ Ahk } alt="" /></a>
-          <a className="keen-slider__slide number-slide9 flex justify-center items-center bg-white rounded-lg shadow-3xl w-40 h-20" href="https://www.openstartups.net/site/ranking/index.html" target="blank"><Image src={ Hundred } alt="" /></a>
-        </div>
-      </section>
+
       {/* 3D download section */}
-      <section className="px-16 xl:px-32 2xl:px-60 py-32 bg-blue-50  text-white">
+      <section className="px-16 xl:px-32 2xl:px-60 py-48 bg-blue-50  text-white">
         <div className="rounded-3xl relative overflow-hidden">
           <Image src={CadImg} alt="" className="w-full h-full object-cover absolute"/>
           <div className="relative">
@@ -273,13 +225,13 @@ export default function Home() {
         </div>
       </section>
       {/* Video section */}
-      <section  className="flex gap-8 px-16 xl:px-32 2xl:px-60 pb-32 bg-blue-50 text-blue-600">
+      <section  className="flex gap-8 px-16 xl:px-32 2xl:px-60 pb-48 pt-16 bg-blue-50 text-blue-600">
         <header className="basis-1/2 flex flex-col gap-4">
           <h2 className="text-3xl font-display font-bold w-4/5">Conte com o suporte da Peerdustry de ponta a ponta</h2>
           <hr className="w-32 border-solid border-2 rounded border-red-700"/>
           <p className="text-sm xl:text-base">Na nossa visão, a compra e a venda de peças usinadas devem fazer parte de um único ecossistema, trabalhando de forma integrada e otimizada. Utilizamos tecnologia para oferecer ao mercado de peças usinadas um novo e inovador modelo de negócios, resolvendo problemas de ponta a ponta, desde o início do processo de compra/venda até a entrega dos pedidos.
           </p>
-          <a href="https://www.peerdustry.com/sobre-peerdustry/" target="blank"><Button className="bg-blue-500 hover:bg-blue-400 text-white border-blue-400">Saiba mais →</Button></a>
+          <Link href="/about"><Button className="bg-blue-500 hover:bg-blue-400 text-white border-blue-400">Saiba mais →</Button></Link>
         </header>
         <iframe src="https://www.youtube.com/embed/hZ1Y0pXYBRQ?controls=1" className="basis-1/2 aspect-video rounded-3xl border-2 border-stroke-40 shadow-3xl">
         </iframe>

@@ -5,17 +5,17 @@ import FormInput from "../components/Form"
 
 export default function Contact () {
   return (
-    <div className="h-[88vh] bg-blue-100 flex flex-row">
-      <section className="bg-gray-200 basis-1/2 h-full flex flex-col items-center justify-center p-28 gap-12">
-        <div className="flex flex-col gap-6 items-start">
+    <div className="h-[88vh] bg-blue-50 flex flex-row px-2 lg:px-32 xl:px-64">
+      <section className="basis-1/2 flex flex-col items-center justify-center gap-16">
+        <div className="flex flex-col gap-6">
           <h1 className="text-5xl font-display font-bold text-blue-500">
             Entre em contato com a Peerdustry
           </h1>
-          <p className="text-blue-500">
-            Você possui duvidas para comprar suas peças usinadas? <br/> Sem problemas a nossa equipe te ajuda.
+          <p className="text-blue-500 ">
+            Você possui duvidas para comprar suas peças usinadas? <br /> Sem problemas a nossa equipe te ajuda.
           </p>
         </div>  
-        <Image src={Illustration} alt="" className="w-[75%]"/>
+        <Image src={Illustration} alt="" className="w-4/5"/>
       </section>
       <section className=" bg-blue-50/50 basis-1/2 h-full relative flex items-center justify-center">
         {/* <Image src={Background} alt="" className="h-full w-full object-cover absolute"/> */}

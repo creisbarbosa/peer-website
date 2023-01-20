@@ -8,7 +8,7 @@ export default function IndexHero() {
   return (
     <section className='bg-white-30 h-full w-full relative'>
       <Image src={HeroBackground} alt="" className="w-full h-full object-cover absolute mix-blend-overlay"/>
-      <div className="px-32 py-28 space-y-8 border-solid border-b border-stroke-40 relative">
+      <div className="px-32 py-24 space-y-8 border-solid border-b border-stroke-40 relative">
         <div className="flex space-x-4">
           <svg width="43" height="44" viewBox="0 0 43 44" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="21.5" cy="22" r="21.5" className="fill-blue-600"/>

@@ -14,7 +14,7 @@ export default function Footer() {
             <a href="https://www.linkedin.com/company/peerdustry/" target="blank"><LinkedinLogo size={38} weight="fill" className="text-blue-50 hover:text-blue-900"/></a>
             <a href="https://www.instagram.com/peerdustry/" target="blank"><InstagramLogo size={38} weight="fill" className="text-blue-50 hover:text-blue-900"/></a>
             <a href="https://www.facebook.com/peerdustry/" target="blank"><FacebookLogo size={38} weight="fill" className="text-blue-50 hover:text-blue-900"/> </a>
-            <Image src={Logo} alt="Peerdustry Logo" className="h-8"/>
+            <Image src={Logo} alt="Peerdustry Logo" className="h-8 animate-spin-slow"/>
           </div>
           <div className="flex w-full justify-between px-48 py-32 border-b border-t border-solid border-white-10">
           
@@ -41,7 +41,7 @@ export default function Footer() {
 
           </div>
           <div className="flex items-center justify-center h-full font-display text-blue-50">
-            <p>©2021 Peerdustry. Todos os direitos reservados</p>
+            <p>©2023 Peerdustry Todos os direitos reservados</p>
           </div>
         </div>
         

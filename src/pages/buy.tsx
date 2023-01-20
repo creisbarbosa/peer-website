@@ -12,28 +12,12 @@ import Image from "next/image";
 import Background from "../../public/img/Section_bg.png"
 
 import { CheckSquare, Timer, ToggleRight, Vault } from "phosphor-react";
+import BuyHero from "./sections/BuyHero";
 
 export default function Buy() {
   return (
     <>
-      {/* Hero Section */}
-      <section className='bg-gradient-to-r relative h-[88vh] border-solid border-b border-stroke-40'>
-        <Image src={Background} alt="" className="h-full w-full object-cover absolute"/>
-        <div className="px-32 py-28 space-y-12  relative">
-          <div className="flex space-x-4">
-            <svg width="43" height="44" viewBox="0 0 43 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="21.5" cy="22" r="21.5" className="fill-white-10"/>
-            </svg>
-            <svg width="117" height="44" viewBox="0 0 117 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M83.1765 39.3301C87.2443 41.6694 91.7106 43.388 96.3372 43.383C107.985 43.1579 117.045 33.6354 116.649 21.9363C116.253 10.2374 106.549 0.738443 94.8866 0.538086C90.26 0.54304 85.9101 2.26724 82.001 4.61499C75.0268 8.80366 66.8172 11.2103 57.9658 11.2196C49.0194 11.2291 40.5626 8.78841 33.2514 4.53123C29.3471 2.25781 25.045 0.608482 20.5906 0.613577C8.81524 0.697707 -0.386616 10.2721 0.0125079 22.0601C0.41167 33.8481 10.2612 43.4025 22.0415 43.462C26.4958 43.4573 30.6859 41.799 34.436 39.5173C41.4582 35.245 49.7493 32.7865 58.6957 32.7769C67.547 32.7676 75.9191 35.1565 83.1765 39.3301Z"  className="fill-white-10"/>
-            </svg>
-          </div>
-          <h1 className="text-4xl xl:text-5xl font-bold font-display text-blue-50 w-2/4 xl:w-4/5 2xl:w-2/3">Compre peças usinadas<br /> sem necessidade de cotação</h1>
-          <p className="text-blue-50 leading-7 w-2/5">A Peerdustry produz as suas demandas com prazos de entrega curtos e garantia de qualidade. Compre peças usinadas economizando tempo e dinheiro.</p>
-          <a href="https://www.peerdustry.com/comprar-pecas-usinadas/#contact" target="blank"><Button type="submit" className="bg-red-600 hover:bg-red-700 text-white border-red-800 mt-6">Converse com nossos consultores ↗</Button></a>
-        </div>
-      </section>
-      {/*Second section */}
+      <BuyHero />
       <section className="bg-gradient-to-r from-slate-300 to-white border-solid border-b-[1px] border-stroke-40">
         <div className="flex flex-col items-center gap-8 py-32">
           <h1 className="text-5xl font-bold font-display text-blue-500 text-center">Tenha acesso à <br />centenas de fornecedores</h1>
@@ -42,7 +26,7 @@ export default function Buy() {
             <path d="M11.4222 5.84615C11.4222 9.07489 8.86528 11.6923 5.71112 11.6923C2.55696 11.6923 0 9.07489 0 5.84615C0 2.61741 2.55696 0 5.71112 0C8.86528 0 11.4222 2.61741 11.4222 5.84615Z" fill="#00437F"/>
             <path d="M31.862 26.1538C31.862 29.3826 29.3051 32 26.1509 32C22.9968 32 20.4398 29.3826 20.4398 26.1538C20.4398 22.9251 22.9968 20.3077 26.1509 20.3077C29.3051 20.3077 31.862 22.9251 31.862 26.1538Z" fill="#00437F"/>
           </svg>
-          <p className="w-2/3 2xl:w-1/3 text-center text-blue-500">A Peer conta com <strong>centenas de Parceiros de Manufatura homologados</strong> em nossa plataforma digital. Portanto, os nossos clientes têm acesso a um grande volume de fornecedores em um só canal. <strong>Economize tempo na busca por novos fornecedores!</strong></p>
+          <p className="w-2/3 2xl:w-1/3 text-center text-blue-500">A Peer conta com <strong>centenas de Parceiros de Manufatura homologados</strong> em nossa plataforma digital. Portanto, os nossos clientes têm acesso a um grande diversidade de fornecedores em um só canal. <strong>Economize tempo na busca por novos fornecedores!</strong></p>
           <a href="https://www.peerdustry.com/comprar-pecas-usinadas/#contact" target="blank" className="text-xl text-blue-500 hover:text-slate-500 font-bold">Comprar peças usinadas ↗</a>
           <div className="grid grid-cols-4 gap-4 px-32 xl:px-64 2xl:px-80">
             <Image src={Img4} alt="" className="rounded-2xl aspect-square object-cover"/>
@@ -63,7 +47,7 @@ export default function Buy() {
             <circle cx="12" cy="12" r="12" fill="#003362"/>
             <path d="M78.5588 21.6897C80.8358 22.9977 83.3358 23.9586 85.9256 23.9559C92.4455 23.83 97.517 18.5057 97.2953 11.9644C97.0736 5.42315 91.6415 0.112025 85.1136 0C82.5239 0.00277004 80.0889 0.966823 77.9008 2.27951C73.9969 4.62152 69.4015 5.96714 64.4469 5.97234C59.4391 5.97767 54.7053 4.613 50.6128 2.23268C48.4273 0.96155 46.0191 0.0393607 43.5258 0.0422092C36.9344 0.0892487 31.7836 5.4426 32.007 12.0336C32.2304 18.6246 37.7438 23.9667 44.3379 24C46.8313 23.9974 49.1767 23.0702 51.2758 21.7945C55.2066 19.4057 59.8476 18.031 64.8554 18.0257C69.8101 18.0205 74.4964 19.3562 78.5588 21.6897Z" fill="#003362"/>
           </svg>
-          <p className="text-blue-500 xl:w-3/4">Nosso cadastro detalhado de fornecedores, com informações do <strong>mapeamento da rede de fornecedores, características construtivas e habilidades técnicas</strong>, garantem a produção do seu lote de peças por especialistas.</p>
+          <p className="text-blue-500 xl:w-3/4">Nosso cadastro detalhado de fornecedores, com informações do <strong>mapeamento da rede de fornecedores, parque fabril e habilidades técnicas</strong>, garantem a produção do seu lote de peças por especialistas.</p>
           <a href="https://api.whatsapp.com/send/?phone=5511960840395&text&type=phone_number&app_absent=0" target="blank" className="text-xl text-blue-500 hover:text-slate-500 font-bold">Fale com a Peer ↗</a>
         </div>
         <div className="grid grid-cols-2 gap-6 basis-3/5 xl:basis-1/2">
@@ -72,7 +56,7 @@ export default function Buy() {
               <h3 className="text-blue-500 font-bold">Otimização<br /> de tempo</h3>
               <Timer size={24} className="fill-blue-500" weight="fill" />
             </div>
-            <p className="p-5 text-sm leading-relaxed text-blue-500">Reduza o processo de compras de semanas para horas. Use seu tempo para focar no core business</p>
+            <p className="p-5 text-sm leading-relaxed text-blue-500">Reduza o processo de compras de semanas para horas. Use seu tempo para focar no seu negócio</p>
           </div>
           <div className="bg-white rounded-2xl overflow-hidden shadow-3xl border-solid border border-stroke-40">
             <div className="flex bg-black-5 justify-between items-center px-5 py-4">
@@ -93,7 +77,7 @@ export default function Buy() {
               <h3 className="text-blue-500 font-bold">Novas<br /> possibilidades</h3>
               <ToggleRight size={24} className="fill-blue-500" weight="fill" />
             </div>
-            <p className="p-5 text-sm leading-relaxed text-blue-500">Amplie sua planta digitalmente. Tenha acesso a uma fábrica infinita sob demanda e evite altos investimentos em novos equipamentos</p>
+            <p className="p-5 text-sm leading-relaxed text-blue-500">Amplie sua planta digitalmente. Tenha acesso a uma fábrica sob demanda e evite altos investimentos em novos equipamentos</p>
           </div>
         </div>
       </section>
@@ -169,7 +153,7 @@ export default function Buy() {
       {/*Fifth Section */}
       <section className="flex flex-col gap-16 px-16 xl:px-32 2xl:px-48 pt-16 pb-32 bg-blue-50">
         <div className="flex flex-col gap-8 items-center">
-          <h2 className="text-4xl font-bold text-blue-500 text-center">Simplifique a compra <br /> de peças usinadas spot</h2>
+          <h2 className="text-4xl font-bold text-blue-500 text-center">Simplifique a compra <br /> de peças usinadas</h2>
           <svg width="164" height="16" viewBox="0 0 164 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="8.23242" cy="8" r="8" fill="#00437F"/>
             <circle cx="32.2324" cy="8" r="8" fill="#00437F"/>
@@ -187,7 +171,7 @@ export default function Buy() {
             <div className="flex flex-col gap-6 text-blue-500 basis-2/3 p-8">
               <p>As empresas que precisam adquirir peças usinadas enfrentam diariamente os altos custos dos processos de compras e de acompanhamento da produção.</p>
               <p>Homologação de fornecedores, cotação, cobrança por respostas, sanar dúvidas técnicas, equalização de propostas, pedido, acompanhar produção. Nenhum desses processos é necessário com a Peerdstry.</p>
-              <p>Comprando peças usinadas em nossa plataforma, você deixa de se preocupar com todas as dificuldades e custos da gestão da cadeia de fornecedores. Além disso, é a oportunidade de simplificar o processo de compras utilizando um novo modelo de negócios e estar em alinhamento com as melhores práticas do mercado.</p>
+              <p>Comprando peças usinadas em nossa plataforma, você deixa de se preocupar com todas as dificuldades e custos da gestão da cadeia de fornecedores. Além disso, é a oportunidade de simplificar o processo de compras utilizando um novo modelo de negócio que esta alinhada às melhores práticas do mercado.</p>
             </div>
           </div>
           <div className="flex flex-col mt-2 2xl:-mt-8 gap-4">
