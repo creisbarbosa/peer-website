@@ -22,7 +22,7 @@ export default function Navbar() {
           <Link 
             href={url} 
             key={url}
-            className="px-4 xl:px-6 py-7 text-blue-500 text-xs xl:text-base transition duration-300 hover:text-slate-800 font-medium hover:bg-slate-300/30" 
+            className="px-4 xl:px-6 py-7 text-blue-500 border-b-4 border-slate-200/0 text-xs xl:text-base transition duration-200 font-medium hover:border-red-600" 
           >{title}</Link>
         ))}
       </div>

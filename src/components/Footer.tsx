@@ -8,13 +8,13 @@ export default function Footer() {
   return (
     <>
       <footer className="flex flex-col gap-8 bg-blue-700 text-white relative overflow-hidden h-[92vh]">
-        <Image src={Background} alt="" className="h-full w-full object-cover absolute"/>
+        <Image priority src={Background} alt="" className="h-full w-full object-cover absolute"/>
         <div className="flex flex-col justify-between relative h-full">
           <div className="flex items-center gap-4 p-20">
             <a href="https://www.linkedin.com/company/peerdustry/" target="blank"><LinkedinLogo size={38} weight="fill" className="text-blue-50 hover:text-blue-900"/></a>
             <a href="https://www.instagram.com/peerdustry/" target="blank"><InstagramLogo size={38} weight="fill" className="text-blue-50 hover:text-blue-900"/></a>
             <a href="https://www.facebook.com/peerdustry/" target="blank"><FacebookLogo size={38} weight="fill" className="text-blue-50 hover:text-blue-900"/> </a>
-            <Image src={Logo} alt="Peerdustry Logo" className="h-8 animate-spin-slow"/>
+            <Image src={Logo} alt="Peerdustry Logo" className="animate-spin-slow"/>
           </div>
           <div className="flex w-full justify-between px-48 py-32 border-b border-t border-solid border-white-10">
           

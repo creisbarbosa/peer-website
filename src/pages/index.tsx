@@ -19,13 +19,95 @@ import IndexHero from "./sections/IndexHero";
 import Link from "next/link";
 import Slider from "../components/Slider";
 
+import Endeavor from "../assets/companies/endeavor.svg";
+import Abdi from "../assets/companies/abdi.svg";
+import Liga from "../assets/companies/liga_ventures.svg";
+import Grob from "../assets/companies/grob.svg";
+import Abimaq from "../assets/companies/abimaq.svg";
+import Fiemg from "../assets/companies/fiemg.svg";
+
+import Nestle from "../assets/companies/nestle_logo.svg";
+import Scania from "../assets/companies/scania_logo.svg";
+import Votorantim from "../assets/companies/votorantim_logo.svg";
+import Eaton from "../assets/companies/eaton_logo.svg";
+import Weg from "../assets/companies/weg_logo.svg";
+import Voith from "../assets/companies/voith_logo.svg";
+
+const clients = [
+  {
+    name: "Nestle",
+    href: "https://www.nestle.com.br/",
+    img: Nestle
+  },
+  {
+    name: "Scania",
+    href: "https://www.scania.com/br/pt/home.html",
+    img: Scania
+  },
+  {
+    name: "Votorantim",
+    href: "https://www.votorantimcimentos.com.br/",
+    img: Votorantim
+  },
+  {
+    name: "Eaton",
+    href: "https://www.eaton.com/br/",
+    img: Eaton
+  },
+  {
+    name: "Weg",
+    href: "https://www.weg.net/institutional/BR/pt/",
+    img: Weg
+  },
+  {
+    name: "Voith",
+    href: "https://voith.com/corp-en/about-us/markets-locations/brazil-pt.html",
+    img: Voith
+  },
+]
+
+const partners = [
+  {
+    name: "Endeavor",
+    href: "https://endeavor.org.br/scaleup/",
+    img: Endeavor
+  },
+  {
+    name: "Abdi",
+    href: "https://www.startupindustria.com.br/",
+    img: Abdi
+  },
+  {
+    name: "Liga",
+    href: "https://liga.ventures/",
+    img: Liga
+  },
+  {
+    name: "Grob",
+    href: "https://www.grobgroup.com/pt/",
+    img: Grob
+  },
+  {
+    name: "Abimaq",
+    href: "https://www.abimaq.org.br/",
+    img: Abimaq
+  },
+  {
+    name: "Fiemg",
+    href: "https://fiemglab.com.br/aceleracaofiemglab40/",
+    img: Fiemg
+  },
+]
 
 export default function Home() {
 
   return (
     <>
       <IndexHero />
-      <Slider />
+      <Slider 
+        kind={clients}
+        keyText={'confiam no'}
+      />
       {/* Connected machining section */}
       <section className="px-16 xl:px-32 2xl:px-60 pt-32 pb-16 space-y-8 text-blue-600 bg-blue-50">
         <div className="flex flex-col gap-4">
@@ -112,7 +194,7 @@ export default function Home() {
                   <h2 className="text-6xl 2xl:text-8xl font-display font-bold">+36.000</h2>
                   <strong>Peças usinadas</strong>
                 </div>
-                  <p>Conseguimos entregar os pedidos certos para os parceiros de manufatura ideais, otimizando a produção de peças usinadas.</p>
+                  <p className="text-right">Conseguimos entregar os pedidos certos para os parceiros de manufatura ideais, otimizando a produção de peças usinadas.</p>
               </article>
               <article className="space-y-6 bg-white p-8 rounded-3xl shadow-3xl basis-1/2">
                 <div className="flex gap-2">
@@ -133,7 +215,7 @@ export default function Home() {
                   <h2 className="text-6xl 2xl:text-8xl font-display font-bold">+350.000 hr</h2>
                   <strong>Capacidade de usinagem / mês</strong>
                 </div>
-                  <p>O repositório de máquinas de usinagem dos nossos parceiros nos permite dimensionar nossa capacidade produtiva em horas.</p>
+                  <p className="text-right">O repositório de máquinas de usinagem dos nossos parceiros nos permite dimensionar nossa capacidade produtiva em horas.</p>
               </article>
             </div>
             <div className="flex gap-6">
@@ -161,6 +243,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Slider 
+        kind={partners}
+        keyText={'apoiam'}
+      />
       {/* How does it works section */}
       <section className="px-16 xl:px-32 2xl:px-60 pt-32 pb-16 bg-blue-50 text-blue-600">
         <div className="flex flex-col gap-16">
@@ -170,7 +256,7 @@ export default function Home() {
             <p className="w-2/3">A Peerdustry gerencia de ponta a ponta o processo de compra e venda de peças usinadas de baixo volume. Nossa plataforma conta atualmente com <strong> mais de 400 fornecedores </strong> e clientes nos mais diversos segmentos, o que garante um ganho de eficiência em toda a cadeia produtiva.</p>
           </div>
           <div className="flex gap-6">
-            <article className="basis-1/3 flex flex-col gap-6 p-8 rounded-3xl bg-white shadow-3xl">
+            <Link href={'/buy'} className="basis-1/3 flex flex-col gap-6 p-8 rounded-3xl bg-white shadow-3xl">
               <div className="flex gap-2">
                 <svg width="43" height="44" viewBox="0 0 43 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="21.5" cy="22" r="21.5" fill="#003362"/>
@@ -179,10 +265,10 @@ export default function Home() {
                   <circle cx="21.5" cy="22" r="21.5" fill="#CFE2F2"/>
                 </svg>
               </div>
-              <h3 className="text-base 2xl:text-xl font-bold font-display">Quem consome peças usinadas</h3>
-              <p className="text-sm 2xl:text-base">O processo de compra de peças usinadas costuma ser cansativo, isso porque ele gera uma grande perda de tempo e ineficiência para quem compra: muito tempo de cotação, grande variação de preços, filas de fabricação entre outros. Nesse cenário, a plataforma da Peerdustry serve como uma intermediadora, eliminando o processo de cotação entre outras etapas, o que gera tempo e reduz custos para quem compra. 
-              </p>
-            </article>
+                <h3 className="text-base 2xl:text-xl font-bold font-display">Quem consome peças usinadas</h3>
+                <p className="text-sm 2xl:text-base">O processo de compra de peças usinadas costuma ser cansativo, isso porque ele gera uma grande perda de tempo e ineficiência para quem compra: muito tempo de cotação, grande variação de preços, filas de fabricação entre outros. Nesse cenário, a plataforma da Peerdustry serve como uma intermediadora, eliminando o processo de cotação entre outras etapas, o que gera tempo e reduz custos para quem compra. 
+                </p>
+            </Link>
             <article className="basis-1/3 flex flex-col gap-6 p-8 rounded-3xl bg-white shadow-3xl">
               <div>
                 <svg width="117" height="44" viewBox="0 0 117 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -209,8 +295,6 @@ export default function Home() {
           </div> 
         </div>
       </section>
-      {/* Allied companies slider */}
-
       {/* 3D download section */}
       <section className="px-16 xl:px-32 2xl:px-60 py-48 bg-blue-50  text-white">
         <div className="rounded-3xl relative overflow-hidden">
@@ -225,7 +309,7 @@ export default function Home() {
         </div>
       </section>
       {/* Video section */}
-      <section  className="flex gap-8 px-16 xl:px-32 2xl:px-60 pb-48 pt-16 bg-blue-50 text-blue-600">
+      <section  className="flex gap-20 px-16 xl:px-32 2xl:px-60 pb-48 pt-16 bg-blue-50 text-blue-600">
         <header className="basis-1/2 flex flex-col gap-4">
           <h2 className="text-3xl font-display font-bold w-4/5">Conte com o suporte da Peerdustry de ponta a ponta</h2>
           <hr className="w-32 border-solid border-2 rounded border-red-700"/>
@@ -233,7 +317,9 @@ export default function Home() {
           </p>
           <Link href="/about"><Button className="bg-blue-500 hover:bg-blue-400 text-white border-blue-400">Saiba mais →</Button></Link>
         </header>
-        <iframe src="https://www.youtube.com/embed/hZ1Y0pXYBRQ?controls=1" className="basis-1/2 aspect-video rounded-3xl border-2 border-stroke-40 shadow-3xl">
+        <iframe 
+          src="https://www.youtube.com/embed/hZ1Y0pXYBRQ?controls=1" 
+          className="basis-1/2 aspect-video rounded-2xl shadow-3xl">
         </iframe>
       </section>
     </>

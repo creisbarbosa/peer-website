@@ -4,8 +4,6 @@ import Img4 from "../../public/img/p_img_4.png";
 import Img5 from "../../public/img/p_img_5.png";
 import Img6 from "../../public/img/p_img_6.png";
 import Img7 from "../../public/img/p_img_7.png";
-import Img12 from "../../public/img/p_img_12.png";
-import Img13 from "../../public/img/p_img_13.png";
 
 
 
@@ -18,6 +16,7 @@ import Torneamento from "../../src/assets/process/torneamento.svg"
 import { ChartPieSlice, CurrencyCircleDollar, CurrencyDollar, Cursor, Tag, ClockClockwise, TrendUp, PresentationChart, ArrowClockwise } from "phosphor-react";
 
 import PartnerHero from "./sections/PartnerHero";
+import JobBoard from "./sections/PartnersJobBoard";
 
 export default function Partners() {
 
@@ -164,30 +163,7 @@ export default function Partners() {
         </div>
       </section>
       {/* Sixth Section */}
-      <section className="bg-blue-50 flex gap-16 px-16 xl:px-40 pt-32 pb-16">
-        <div className="basis-1/2 space-y-8">
-          <div className="flex justify-center items-center h-44 rounded-2xl bg-slate-200 border-solid border border-slate-300 overflow-hidden ">
-            <Image src={Img12} alt="" className="w-full h-full object-contain"/>
-          </div>
-          <div className="space-y-4">
-            <h3 className="text-xl font-bold text-blue-500">Mural de trabalho</h3>
-            <p className="text-slate-600">No Mural de Trabalhos são oferecidos <b>trabalhos cotados</b>, e com <b>prazos de entrega definidos</b>, para os nossos Parceiros de Manufatura.</p>
-            <p className="text-slate-600">Os trabalhos ficam <b>disponíveis por um tempo determinado</b>, informado na oferta e por e-mail, para que todos os Parceiros de Manufatura possam <b>analisar a oportunidade</b>.</p>
-          </div>
-        </div>
-        <div className="basis-1/2 space-y-8">
-          <div className="flex justify-center items-center h-44 rounded-2xl bg-slate-200 border-solid border border-slate-300 overflow-hidden ">
-            <Image src={Img13} alt="" className="w-full h-full object-contain"/>
-          </div>
-          <div className="flex flex-col items-end gap-16">
-            <div className="space-y-4">
-              <h3 className="text-xl font-bold text-blue-500">Seja um parceiro engajado</h3>
-              <p className="text-slate-600">Após o término deste período, o sistema da Plataforma da Peer <b>elege o melhor fornecedor para a peça</b>, baseado na <b>reputação</b> da plataforma</p>
-            </div>
-            <a href="https://usinagem.peerdustry.com/signup" target="blank" className="text-blue-500 hover:text-blue-100 font-bold text-xl">Cadastre-se↗</a>
-          </div>
-        </div>
-      </section>
+      <JobBoard />
       {/*Seventh Section */}
       <section className="flex flex-row gap-6 bg-blue-50 px-16 xl:px-40 pt-16 pb-64">
         <div className="basis-1/4 flex flex-col gap-3 pt-3">
