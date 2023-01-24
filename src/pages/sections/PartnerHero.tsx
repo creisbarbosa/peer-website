@@ -24,7 +24,7 @@ export default function PartnerHero() {
           <p className="text-blue-50 leading-7 w-[45%]">
             Na plataforma da Peerdustry vários projetos são ofertados todos os dias, uma vez homologado você tem acesso ao Mural de Trabalhos, com diversas demandas de peças usinadas. 
           </p>
-          <Link href="/contact">
+          <Link href="https://usinagem.peerdustry.com/signup">
             <button 
               type="submit"
               className="flex items-center px-8 py-4 rounded-lg font-semibold  transition-colors bg-blue-800 hover:bg-blue-500 text-white mt-12 uppercase text-xl font-display tracking-wider"

@@ -17,6 +17,7 @@ import { ChartPieSlice, CurrencyCircleDollar, CurrencyDollar, Cursor, Tag, Clock
 
 import PartnerHero from "./sections/PartnerHero";
 import JobBoard from "./sections/PartnersJobBoard";
+import Link from "next/link";
 
 export default function Partners() {
 
@@ -34,7 +35,7 @@ export default function Partners() {
             <path d="M31.862 26.1538C31.862 29.3826 29.3051 32 26.1509 32C22.9968 32 20.4398 29.3826 20.4398 26.1538C20.4398 22.9251 22.9968 20.3077 26.1509 20.3077C29.3051 20.3077 31.862 22.9251 31.862 26.1538Z" 
             fill="#00437F"/>
           </svg>
-          <a href="" className="text-lg text-blue-500 hover:text-slate-500 font-bold">Com a Peerdustry, um leque de oportunidades se abre</a>
+          <h2 className="text-lg text-blue-500 hover:text-slate-500 font-bold">Com a Peerdustry, um leque de oportunidades se abre</h2>
           <p className="w-3/5 xl:w-2/5 text-center text-blue-500">Nossos Parceiros de Manufatura conseguem aumentar suas receitas significativamente sem a necessidade de acompanhamentos, visitas aos clientes ou elaboração de cotações.</p>
           <div className="grid grid-cols-4 gap-4 px-32 xl:px-56 2xl:px-80">
             <Image src={Img4} alt="" className="rounded-2xl aspect-square object-cover"/>
@@ -142,7 +143,7 @@ export default function Partners() {
           </div>
           <div className="flex flex-col gap-6 col-span-3 row-span-2 ">
             <div className="basis-1/2 flex flex-col gap-3 justify-center items-center rounded-2xl bg-slate-200 hover:bg-slate-300 duration-300 border-solid border border-slate-300 hover:border-slate-400 cursor-pointer">
-              <a href="https://usinagem.peerdustry.com/signup" target="blank" className="text-slate-800 font-bold font-display">Vem para a Peer ↗</a>
+              <Link href="https://usinagem.peerdustry.com/signup" target="blank" className="text-slate-800 font-bold font-display">Vem para a Peer ↗</Link>
             </div>
             <div className="basis-1/2 flex justify-center items-center rounded-2xl bg-slate-200 hover:bg-slate-300 duration-300 border-solid border border-slate-300 hover:border-slate-400">
               <Image src={Mandrilhadora} alt="" className=""/>

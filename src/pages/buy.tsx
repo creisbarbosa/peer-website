@@ -13,6 +13,7 @@ import Background from "../../public/img/Section_bg.png"
 
 import { CheckSquare, Timer, ToggleRight, Vault } from "phosphor-react";
 import BuyHero from "./sections/BuyHero";
+import Link from "next/link";
 
 export default function Buy() {
   return (
@@ -27,7 +28,7 @@ export default function Buy() {
             <path d="M31.862 26.1538C31.862 29.3826 29.3051 32 26.1509 32C22.9968 32 20.4398 29.3826 20.4398 26.1538C20.4398 22.9251 22.9968 20.3077 26.1509 20.3077C29.3051 20.3077 31.862 22.9251 31.862 26.1538Z" fill="#00437F"/>
           </svg>
           <p className="w-2/3 2xl:w-1/3 text-center text-blue-500">A Peer conta com <strong>centenas de Parceiros de Manufatura homologados</strong> em nossa plataforma digital. Portanto, os nossos clientes têm acesso a um grande diversidade de fornecedores em um só canal. <strong>Economize tempo na busca por novos fornecedores!</strong></p>
-          <a href="https://www.peerdustry.com/comprar-pecas-usinadas/#contact" target="blank" className="text-xl text-blue-500 hover:text-slate-500 font-bold">Comprar peças usinadas ↗</a>
+          <Link href="/contact" target="blank" className="text-xl text-blue-500 hover:text-slate-500 font-bold">Comprar peças usinadas ↗</Link>
           <div className="grid grid-cols-4 gap-4 px-32 xl:px-64 2xl:px-80">
             <Image src={Img4} alt="" className="rounded-2xl aspect-square object-cover"/>
             <Image src={Img5} alt="" className="rounded-2xl aspect-square object-cover"/>
