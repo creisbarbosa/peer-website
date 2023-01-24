@@ -100,7 +100,8 @@ module.exports = {
 
       animation: {
         'bounce-slow': 'bounce 2s infinite',
-        'spin-slow': 'spin 4s infinite',
+        'spin-slow': 'spin 5s infinite',
+        'pulse-slow': 'pulse 6s infinite',
       }
     },
   },

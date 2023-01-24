@@ -44,9 +44,9 @@ export default function Partners() {
           </div>
         </div>
       </section>
-      {/* Third Section */}
+      {/* Partners Benefits Section */}
       <section>
-        <div className="grid grid-cols-4 grid-rows-3 gap-4 px-16 xl:px-32 2xl:px-56 py-16 xl:py-32 bg-blue-50">
+        <div className="grid grid-cols-4 grid-rows-3 gap-4 px-16 xl:px-40 2xl:px-56 py-16 xl:py-32 bg-blue-50">
           <div className="col-span-2 space-y-4">
             <h3 className="text-blue-500 font-bold text-3xl">Vantagens de ser um <br />fornecedor Peerdustry</h3>
             <p className="text-sm leading-relaxed text-slate-500">Saiba porque seu um <br />parceiro da Peerdustry →</p>

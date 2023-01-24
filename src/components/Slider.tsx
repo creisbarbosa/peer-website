@@ -6,7 +6,7 @@ export default function Slider({ kind, keyText }) {
 
     <section className="bg-blue-50">
       <li 
-        className="flex flex-row px-32 py-8 justify-between"
+        className="flex flex-row px-16 xl:px-32 2xl:px-60 py-8 justify-between"
       >
         <a className="flex justify-center items-center w-40 h-20 text-sm text-slate-600">
           Empresas que<br/> {keyText} nosso<br/> trabalho →
