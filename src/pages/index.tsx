@@ -139,7 +139,7 @@ export default function Home() {
                   <h2 className="text-2xl xl:text-4xl font-bold font-display">Compre peças usinadas sem precisar cotar</h2>
                 </div>
                 <div className="basis-2/3 xl:basis-1/2 flex flex-col gap-4 justify-between place-items-end">
-                  <p className="text-sm 2xl:text-base">Com a Peer você fabrica peças com especialistas e tem mais tempo para se dedicar ao seu negócio. Faremos a curadoria dos fornecedores mais adequados e capacitados para seus pedidos, eliminando longas etapas do processo de compras.</p>
+                  <p className="text-sm 2xl:text-base">Com a Peer você fabrica peças com especialistas e tem mais tempo para se dedicar ao seu negócio. Fazemos a curadoria dos fornecedores mais adequados e capacitados para fabricar seus pedidos, eliminando longas etapas do processo de compras.</p>
                   <a href="https://www.peerdustry.com/comprar-pecas-usinadas/#contact" target="blank"><Button className="bg-red-600 hover:bg-red-500 text-white border-white-20">Compre peças usinadas →</Button></a>
                 </div>
               </div>

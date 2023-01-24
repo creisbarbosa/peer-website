@@ -18,7 +18,7 @@ export default function IndexHero() {
           </svg>
         </div>
         <h1 className="text-4xl xl:text-5xl 2xl:text-7xl font-bold font-display text-blue-600 w-2/4 xl:w-2/3 2xl:w-2/3">Compre peças usinadas em menos de 24h, sem se preocupar com cotação</h1>
-        <p className="text-blue-600 w-1/2">Através de uma plataforma digital com <strong>centenas de fornecedores de usinagem</strong> , a Peerdustry possibilita comprar peças usinadas em poucos cliques, além de garantir o prazo de entrega acordado e qualidade das peças adquiridas.</p>
+        <p className="text-blue-600 w-1/2">Através de uma plataforma digital com <strong>centenas de fornecedores de usinagem</strong>, a Peerdustry possibilita comprar peças usinadas em poucos cliques, além de garantir o prazo de entrega acordado e a qualidade das peças adquiridas.</p>
         <a 
           href="https://www.peerdustry.com/comprar-pecas-usinadas/#contact" 
           target="blank">
