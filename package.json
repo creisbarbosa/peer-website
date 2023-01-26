@@ -9,8 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-alert-dialog": "^1.0.2",
     "@radix-ui/react-checkbox": "^1.0.0",
     "@radix-ui/react-slot": "^1.0.0",
+    "@sendinblue/client": "^3.2.2",
     "@types/node": "18.11.13",
     "@types/nodemailer": "^6.4.7",
     "@types/react": "18.0.26",
