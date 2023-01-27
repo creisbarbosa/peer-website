@@ -4,7 +4,7 @@ export default async function Sendingblue( req, res) {
   
   let apiInstance = new SibApiV3Sdk.TransactionalEmailsApi();
   
-  require('dotenv').config({path: "./vars/.env"})
+  require('dotenv').config()
   
   let apiKey = apiInstance.authentications['apiKey'];
   apiKey.apiKey = process.env.API_KEY;
