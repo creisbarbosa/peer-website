@@ -12,7 +12,7 @@ export default function Contact () {
 
   const handleSubmit = async(event) => {
     event.preventDefault()
-    console.log('Enviando')
+    console.log('Sending request')
 
     let data = {
       name,

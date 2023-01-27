@@ -1,4 +1,4 @@
-export default async function Sendingblue( req, res) {
+export default async function Sendingblue(req, res) {
 
   const SibApiV3Sdk = require('@sendinblue/client')
   
