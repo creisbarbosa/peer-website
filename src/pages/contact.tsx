@@ -6,7 +6,7 @@ export default function Contact () {
   const [ name, setName ] = useState('')
   const [ email, setEmail ] = useState('')
   const [ company, setCompany ] = useState('')
-  const [ phone, setPhone ] = useState('')
+  const [ tel, setTel ] = useState('')
   const [ message, setMessage ] = useState('')
   const [ submitted, setSubmitted ] = useState(false)
 
@@ -18,7 +18,7 @@ export default function Contact () {
       name,
       email,
       company,
-      phone,
+      tel,
       message,
     }
 
@@ -43,7 +43,7 @@ export default function Contact () {
           setName('')
           setEmail('')
           setCompany('')
-          setPhone('')
+          setTel('')
           setMessage('')
 
         }
@@ -75,10 +75,10 @@ export default function Contact () {
                 Nome *
               </label>
             <input 
+              required
               type="text"
               name="name"
               placeholder="Seu Nome"
-              required={true}
               className="rounded-md px-4 py-2 border-solid border border-blue-200/60 placeholder-blue-200 text-sm text-blue-400 focus:outline-blue-200"
               value={name}
               onChange={event => {
@@ -95,10 +95,11 @@ export default function Contact () {
                 E-mail*
               </label>
             <input 
+              required
               type="email"
               name="email"
               placeholder="seuemail@empresa.com"
-              required={true}
+              pattern = "[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)"
               className="rounded-md px-4 py-2 border-solid border border-blue-200/60 placeholder-blue-200 text-sm text-blue-400 focus:outline-blue-200"
               value={email}
               onChange={event => {
@@ -115,10 +116,10 @@ export default function Contact () {
                 Empresa*
               </label>
             <input 
+              required
               type="text"
               name="company"
               placeholder="Nome da empresa"
-              required={true}
               className="rounded-md px-4 py-2 border-solid border border-blue-200/60 placeholder-blue-200 text-sm text-blue-400 focus:outline-blue-200"
               value={company}
               onChange={event => {
@@ -130,27 +131,30 @@ export default function Contact () {
           <div 
             className="flex flex-col gap-1">
             <label 
-              htmlFor="phone"
+              htmlFor="tel"
               className="text-blue-300 font-medium text-sm">
                 Telefone *
               </label>
             <input 
-              type="phone"
-              name="phone"
+              required
+              type="tel"
+              name="tel"
               placeholder="(00) 0000 - 0000"
+              pattern="\d{10,11}"
               className="rounded-md px-4 py-2 border-solid border border-blue-200/60 placeholder-blue-200 text-sm text-blue-400 focus:outline-blue-200"
-              value={phone}
+              value={tel}
               onChange={event => {
-                setPhone(event.target.value)
+                setTel(event.target.value)
               }}
             />
           </div >
 
           <textarea 
+            required
+            typeof="text"
             name="message"
             placeholder="Digite aqui sua  mensagem" 
-            required
-            className="rounded-md border border-solid border-blue-200/60 placeholder-blue-200 text-sm text-blue-400 px-4 py-2 resize-none h-24 focus:outline-blue-200"
+            className="rounded-md border border-solid border-blue-200/60 placeholder-blue-200 text-sm text-blue-400 px-4 py-3 resize-none h-24 focus:outline-blue-200"
             value={message}
             onChange={event => {
               setMessage(event.target.value)
@@ -160,7 +164,7 @@ export default function Contact () {
           <input
             type="submit"
             value="enviar"
-            className="bg-blue-500 py-2 text-blue-100 font-bold uppercase rounded-md border border-solid border-blue-400 hover:bg-red-600 hover:border-red-700 hover:text-red-50 transition-colors cursor-pointer"
+            className="bg-blue-500 py-2 text-blue-100 font-bold uppercase items-start rounded-md border border-solid border-blue-400 hover:bg-red-600 hover:border-red-700 hover:text-red-50 transition-colors cursor-pointer"
             onClick={event => {
               handleSubmit(event)
             }}

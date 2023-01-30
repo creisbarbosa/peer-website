@@ -139,7 +139,7 @@ export default function Home() {
                   <h2 className="text-2xl xl:text-4xl font-bold font-display">Compre peças usinadas sem precisar cotar</h2>
                 </div>
                 <div className="basis-2/3 xl:basis-1/2 flex flex-col gap-4 justify-between place-items-end">
-                  <p className="text-sm 2xl:text-base">Com a Peer você fabrica peças com especialistas e tem mais tempo para se dedicar ao seu negócio. Fazemos a curadoria dos fornecedores mais adequados e capacitados para fabricar seus pedidos, eliminando longas etapas do processo de compras.</p>
+                  <p className="text-sm 2xl:text-base">Com a Peer você fabrica peças com especialistas e tem mais tempo para se dedicar ao seu negócio. Fazemos a curadoria dos fornecedores mais adequados e capacitados para fabricar seus pedidos, eliminando longas etapas do processo de compra.</p>
                   <a href="https://www.peerdustry.com/comprar-pecas-usinadas/#contact" target="blank"><Button className="bg-red-600 hover:bg-red-500 text-white border-white-20">Compre peças usinadas →</Button></a>
                 </div>
               </div>
@@ -266,7 +266,7 @@ export default function Home() {
                 </svg>
               </div>
                 <h3 className="text-base 2xl:text-xl font-bold font-display">Quem consome peças usinadas</h3>
-                <p className="text-sm 2xl:text-base">O processo de compra de peças usinadas costuma ser cansativo, isso porque ele gera uma grande perda de tempo e ineficiência para quem compra: muito tempo de cotação, grande variação de preços, filas de fabricação entre outros. Nesse cenário, a plataforma da Peerdustry serve como uma intermediadora, eliminando o processo de cotação entre outras etapas, o que gera tempo e reduz custos para quem compra. 
+                <p className="text-sm 2xl:text-base">O processo de compra de peças usinadas costuma ser cansativo, isso porque ele gera uma grande perda de tempo e de EFICIÊNCIA para quem compra: muito tempo para cotação, grande variação de preços, filas para fabricação entre outros. Nesse cenário, a plataforma da Peerdustry serve como uma intermediadora, eliminando muitas etapas desse processo, como a cotação, o que gera tempo e reduz custos para quem compra. 
                 </p>
             </Link>
             <article className="basis-1/3 flex flex-col gap-6 p-8 rounded-3xl bg-white shadow-3xl">
@@ -276,7 +276,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-base 2xl:text-xl font-bold font-display">Peerdustry</h3>
-              <p className="text-sm 2xl:text-base">Unindo compradores e fornecedores de peças usinadas está a Peerdustry, uma plataforma digital de usinagem que integra as demandas das duas pontas. Unimos empresas com capacidade produtiva ociosa com outras que apresentam demanda por fabricação e reduzimos os principais custos envolvidos no processo de compra e venda de peças usinadas, levando dinamismo e eficiência para toda a cadeia  produtiva, garantindo a qualidade e prazo das peças adquiridas.
+              <p className="text-sm 2xl:text-base">Unindo compradores e fornecedores de peças usinadas está a Peerdustry, uma plataforma digital de usinagem que integra as demandas das duas pontas. Unimos empresas com capacidade produtiva ociosa com outras que apresentam demanda por fabricação e reduzimos os principais custos envolvidos no processo de compra e venda de peças usinadas, lelevando dinamismo e eficiência para toda a cadeia produtiva e garantindo a qualidade e o prazo de entrega das peças adquiridas.
               </p>
             </article>
             <article className="basis-1/3 flex flex-col gap-6 p-8 rounded-3xl bg-white shadow-3xl">
@@ -289,7 +289,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-base 2xl:text-xl font-bold font-display">Parceiros de manufatura</h3>
-              <p className="text-sm 2xl:text-base">Quem fornece peças usinadas costuma se deparar com grandes oscilações de mercado, ou seja, momentos de alta e baixa demanda, gerando momentos de ociosidade produtiva e instabilidade financeira. Com a plataforma da Peerdustry, as empresas podem alcançar novos mercados utilizando a capacidade produtiva em momentos de ociosidade,  além de eliminar 100% do custo relacionado à aquisição de novos clientes e ao tempo gasto com cotações.
+              <p className="text-sm 2xl:text-base">Quem fornece peças usinadas costuma se deparar com as oscilações de mercado, ou seja, períodos de alta e baixa demanda, quem geram momentos de ociosidade produtiva e imprevisibilidade financeira. Com a plataforma da Peerdustry, as empresas podem alcançar novos mercados utilizando a capacidade produtiva em momentos de ociosidade,  além de eliminar 100% do custo relacionado à aquisição de novos clientes e ao tempo gasto com cotações.
               </p>
             </article>
           </div> 

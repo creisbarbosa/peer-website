@@ -12,12 +12,12 @@ export default async function Sendingblue(req, res) {
   let sendSmtpEmail = new SibApiV3Sdk.SendSmtpEmail();
 
   sendSmtpEmail.subject = "Mensagem de Contato Website Peerdustry";
-  sendSmtpEmail.htmlContent = "<html> <body> <h1>Mensagem de contato de {{params.name}}</h1> <h2><b>Empresa:</b> {{params.company}}</h2> <p><b>Mensagem:</b> {{params.message}}</p> <p><b>Telefone de contato:<b/> {{params.phone}}</p> <p>Email de contato: {{params.email}}</p> </body> </html>";
+  sendSmtpEmail.htmlContent = "<html> <body> <h1>Mensagem de contato de {{params.name}}</h1> <h2><b>Empresa:</b> {{params.company}}</h2> <p><b>Mensagem:</b> {{params.message}}</p> <p><b>Telefone de contato:<b/> {{params.tel}}</p> <p>Email de contato: {{params.email}}</p> </body> </html>";
   sendSmtpEmail.sender = {email: 'cassio.reis@peerdustry.com', name: 'Contato Website Peerdustry'};
   sendSmtpEmail.to = [{email: 'cassio.reis@peerdustry.com', name: 'Cassio Reis'}];
   sendSmtpEmail.replyTo = {"email":"replyto@peerdustry.com"};
   sendSmtpEmail.headers = {"Some-Custom-Name":"unique-id-1234"};
-  sendSmtpEmail.params = {"name":`${req.body.name}`,"email":`${req.body.email}`,"company":`${req.body.company}`,"phone":`${req.body.phone}`,"message":`${req.body.message}`,}
+  sendSmtpEmail.params = {"name":`${req.body.name}`,"email":`${req.body.email}`,"company":`${req.body.company}`,"tel":`${req.body.tel}`,"message":`${req.body.message}`,}
   
   await apiInstance.sendTransacEmail(sendSmtpEmail)
     .then(function(data) {
