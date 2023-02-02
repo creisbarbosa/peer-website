@@ -104,7 +104,8 @@ export default function Home() {
   return (
     <>
       <IndexHero />
-      <Slider 
+      <Slider
+        intro="Empresas" 
         kind={clients}
         keyText={'confiam no'}
       />
@@ -243,7 +244,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Slider 
+      <Slider
+        intro="Instituições" 
         kind={partners}
         keyText={'apoiam'}
       />
